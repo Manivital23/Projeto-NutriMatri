@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bege-color: #faf3df;
+  --form-color: #8e415b;
+  --rosa-claro: #d9c0c8;
+  --rosa-: #d15385;
+  --verde-escuro-: #414e32;
+}
+
+body {
+  background-color: var(--bege-color);
+}
+.formularioCadastro {
+  background-color: var(--form-color);
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.formularioCadastro::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 150px;
+  background-image: url('../../img/cadastro/fundoCadastroMae.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -60px;
+  right: -90px;
+  opacity: 0.5;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.campoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campoForm label,
+a {
+  color: var(--bege-color);
+  font-family: Poppins;
+}
+
+.campoTermos {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.campoTermos input {
+  margin-top: 4px;
+}
+
+.campoTermos label {
+  color: var(--bege-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.campoForm input {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--rosa-claro);
+  border: 2px solid var(--bege-color);
+}
+
+.upload-foto input {
+  display: none;
+}
+
+.upload-foto label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--bege-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.upload-foto img {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid var(--rosa-);
+  width: 140px;
+  transition: 0.3s;
+}
+
+.upload-foto img:hover {
+  opacity: 0.8;
+}
+
+.login {
+  margin: 10px 150px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.login p {
+  color: var(--verde-escuro-);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.login span {
+  color: var(--rosa-);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.plano h2{
+ font-family: "SN Pro", sans-serif;
+  margin: 10px 150px;
+  border-radius: 20px;
+  position: relative;
+  color: var(--verde-escuro-);
+
+}

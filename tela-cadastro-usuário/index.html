@@ -1,24 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro NutriMatri</title>
-</head>
-<body>
-  <header>
-  </header>
-  <main>
-        <section>
-      <div class="forCad">
-        <form autocomplete="on" target="_blank" novalidate>
-          
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro NutriMatri</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class="formularioCadastro">
+          <form class="form" autocomplete="on" target="_blank" novalidate>
+            <div class="campoForm">
+              <label class="name" for="campoNome">Nome:</label>
+              <input class="campo" type="text" id="campoNome" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoNomeDeUsuário"
+                >Nome de usuário:</label
+              >
+              <input type="text" id="campoNomeDeUsuário" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoTelefoneCelular"
+                >Telefone/Celular:</label
+              >
+              <input type="text" id="campoTelefoneCelular" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoSenha">Senha:</label>
+              <input type="password" id="campoSenha" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoData">Data de Nascimento:</label>
+              <input type="date" id="campoData" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoGestação">Tempo de Gestação:</label>
+              <input type="text" id="campoGestação" />
+            </div>
+            <div class="campoForm">
+              <label class="name" for="campoEmail">Email:</label>
+              <input type="email" id="campoEmail" />
+            </div>
+            <div class="campoForm">
+              <div class="upload-foto">
+                <label class="name" for="campoFoto"
+                  >Insira sua foto:
+                  <img
+                    src="../img/cadastro/fotoDePerfilMae.png"
+                    alt="adicionar foto"/>
+                  </label>
+                <input type="file" id="campoFoto" />
+              </div>
+            </div>
+          </form>
+          <div class="campoTermos">
+            <input type="checkbox" id="campoTermos" />
+            <label for="campoTermos">
+              Li e concordo com os
+              <a href="#" target="_blank"> Termos de Uso </a
+              >, a
+              <a href="#" target="_blank">
+                Política de Privacidade
+              </a>
+              e autorizo o tratamento dos meus dados pessoais conforme a LGPD.
+            </label>
+          </div>
+        </div>
+      </section>
+      <article>
+        <div class="login">
+          <p>Já possui um cadastro? <a href="#" target="_blank"> <span>Faça o login</span></a></p>
+        </div>        
+      </article>
+      <section>
+        <div class="plano">
+        <h2>Escolha seu plano:</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
