@@ -16,6 +16,20 @@
     <title>Início</title>
   </head>
   <body>
+    <header></header>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <main>
     <section class="container" #primaria>
       <h1>Cuidar de quem cuida é importante!</h1>
       <div class="secao1" aria-label="Sobre">
@@ -105,7 +119,9 @@
               />
             </li>
           </ol>
-          <a href="#">Busque um profissional</a>
+          <button class="botao">
+          Busque um profissional
+          </button>
         </div>
       </div>
     </section>
@@ -434,7 +450,9 @@
             </div>
           </li>
         </ul>
-        <a href="#"><p>Comece agora!</p></a>
+        <button class="botao">
+          Comece agora!
+          </button>
       </div>
     </article>
 
@@ -595,5 +613,7 @@
     <div>
       <img src="../img/inicio/kiwi.png" alt="kiwi cortado">
     </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
