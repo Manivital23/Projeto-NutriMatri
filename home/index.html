@@ -13,6 +13,10 @@
       type="image/x-icon"
       href="../img/logos/isotipoAs02VerdeEscuro.svg"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <title>Início</title>
   </head>
   <body>
@@ -29,15 +33,15 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-    <main>
+
     <section class="container" #primaria>
-      <h1>Cuidar de quem cuida é importante!</h1>
-      <div class="secao1" aria-label="Sobre">
+      <h1 id="chamada">Cuidar de quem cuida é importante!</h1>
+      <div class="secao1">
         <div>
           <p>
             <strong
               >Somos uma plataforma dedicada ao bem-estar de mulheres durante a
-              gestação e o pós-parto!</strong
+              gestação e o pós-parto.</strong
             >
             <br />
             <br />
@@ -55,10 +59,11 @@
       </div>
     </section>
 
-    <section class="container" #secundaria>
+    <section class="container" id="secundaria">
+      <h1>Como funciona?</h1>
+      <div class="secao2"> 
       <div>
-        <h1>Como funciona?</h1>
-        <p>
+        <p id="textoSecao2">
           Conectamos gestantes e mães a profissionais especializados, como
           nutricionistas e psicólogos, por meio de planos de atendimento.
           Oferecemos opções de planos comuns e sociais, ampliando o acesso ao
@@ -68,62 +73,66 @@
           blog, além de uma newsletter com orientações e novidades para
           acompanhar cada fase da maternidade.
         </p>
-      </div>
-      <div>
-        <div class="imagem2">
-          <img
+      </div> 
+      <div class="container" id="comoFunciona">
+        <div class="imagem2" loading="lazy">
+          <img id="imagem2"
             src="../img/inicio/imagem2.png"
             alt="Em cima uma médica segurando uma laranja e um remédio, em baixo uma foto com alimentos saudáveis"
           />
         </div>
         <div class="passoAPasso">
-          <ol class="lista">
             <!-- <a target="_blank" href="https://icons8.com/icon/7695/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-            <li>
-              Busque um profissional de acordo com sua necessidade
+            <div class="passo">
+              <p>1.Busque um profissional de acordo com sua necessidade</p>
               <img
                 width="60"
                 height="60"
-                src="https://img.icons8.com/ios-filled/50/search--v1.png"
+                src="https://img.icons8.com/ios-filled/FAF3DF/50/search--v1.png"
                 alt="search--v1"
               />
-            </li>
+            </div>
             <!--<a target="_blank" href="https://icons8.com/icon/85088/whatsapp">WhatsApp</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-            <li>
-              Clique no botão do WhatsApp no perfil do profissional
+            <div class="passo">
+              <p>2.Clique no botão do WhatsApp no perfil do profissional</p>
               <img
                 width="60"
                 height="60"
-                src="https://img.icons8.com/material-outlined/48/whatsapp--v1.png"
+                src="https://img.icons8.com/material-outlined/FAF3DF/48/whatsapp--v1.png"
                 alt="whatsapp--v1"
               />
-            </li>
+            </div>
             <!--<a target="_blank" href="https://icons8.com/icon/37965/handshake-heart">Agreement</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-            <li>
-              Combinem juntos os detalhes do atendimento
+            <div class="passo">
+              <p>3.Combinem juntos os detalhes do atendimento</p>
               <img
                 width="60"
                 height="60"
-                src="https://img.icons8.com/ios/50/handshake-heart.png"
+                src="https://img.icons8.com/ios/FAF3DF/50/handshake-heart.png"
                 alt="handshake-heart"
               />
-            </li>
+            </div>
             <!--<a target="_blank" href="https://icons8.com/icon/85793/laptop">Laptop</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-            <li>
-              Faça o encontro remotamente pelo seu computador ou celular
+            <div class="passo">
+              <p>4.Faça o encontro remotamente pelo seu computador ou celular</p>
               <img
                 width="60"
                 height="60"
-                src="https://img.icons8.com/material-rounded/48/laptop.png"
+                src="https://img.icons8.com/material-rounded/FAF3DF/48/laptop.png"
                 alt="laptop"
               />
-            </li>
-          </ol>
-          <button class="botao">
+            </div>
+          </div>
+        
+      <div class="buscar">
+        <button class="botao" id="bpro">
           Busque um profissional
           </button>
+          </div>
         </div>
-      </div>
+        
+     
+    </div>
     </section>
 
     <article class="container" #terciaria>
@@ -134,7 +143,7 @@
           pelos profissionais e pela NutriMatri!
         </p>
       </div>
-      <div class="card-wrapper">
+      <div id="card-wrapper">
         <ul class="card-list">
           <li class="card-item1">
             <div class="stars">
@@ -613,7 +622,7 @@
     <div>
       <img src="../img/inicio/kiwi.png" alt="kiwi cortado">
     </div>
-    </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>
