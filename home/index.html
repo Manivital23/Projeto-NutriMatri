@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <title>Início</title>
   </head>
   <body>
@@ -669,6 +670,15 @@ botaoTemp.addEventListener('click', () => {
     botaoTemp.disabled = false;
   }, 2000);
 });</script>
+
+<script>
+        gsap.from("h1", {
+             xPercent: -50,
+              opacity: 0,
+              duration: 1.2,
+            ease: "power3.out"
+        });
+        </script>
     <footer></footer>
     
   </body>
