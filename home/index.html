@@ -29,12 +29,6 @@
       </div>
     </div>
 
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
-
     <section class="container" id="primaria">
       <h1 id="chamada">Cuidar de quem cuida é importante!</h1>
       <div class="secao1">
@@ -472,8 +466,7 @@
           </button></div>
      
 
-          <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-          <script src="./script.js"></script>
+          
     </article>
 
     <article class="wrapper" #quarto>
@@ -615,25 +608,7 @@
         </div>
       </div>
 
-      <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for(i = 0; i < acc.length; i++){
-          acc[i].addEventListener("click", function(){
-            this.classList.toggle("active");
-            this.parentElement.classList.toggle("active");
-
-            var pannel = this.nextElementSibling;
-
-            if(pannel.style.display === "block"){
-              pannel.style.display = "none";
-            } else{
-              pannel.style.display = "block";
-            }
-          });
-        }
-      </script>
+      
     </article>
 
     <aside class="container" id="quinto">
@@ -654,31 +629,20 @@
       <img src="../img/inicio/kiwi.png" alt="kiwi cortado">
     </div>
 
-    <script>const botaoTemp = document.getElementById('btn-temporario');
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
-botaoTemp.addEventListener('click', () => {
-  const textoOriginal = botaoTemp.textContent;
-  botaoTemp.textContent = 'Inscrito!';
-  botaoTemp.style.backgroundColor =  '#798A65';
-  botaoTemp.style.border= '2px solid #D15385';
-  botaoTemp.disabled = true; 
+    <script src="../JS/vlibrasWidget.js"> </script>
 
-  setTimeout(() => {
-    botaoTemp.textContent = textoOriginal;
-    botaoTemp.style.backgroundColor =  '#D15385';
-  botaoTemp.style.border= '2px solid #798A65';
-    botaoTemp.disabled = false;
-  }, 2000);
-});</script>
+    <script src="../JS/accordion.js"> </script>
 
-<script>
-        gsap.from("h1", {
-             xPercent: -50,
-              opacity: 0,
-              duration: 1.2,
-            ease: "power3.out"
-        });
-        </script>
+    <script src="../JS/btnChange.js"></script>
+
+    <script src="../JS/gsapH1Anim.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="../JS/swiper.js"></script>
+
     <footer></footer>
     
   </body>
