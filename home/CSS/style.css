@@ -209,6 +209,7 @@ body {
 }
 
 .card-wrapper {
+  
   width: 62.5rem;
   padding: 1.25rem 0.625rem;
   overflow: hidden;
@@ -247,6 +248,7 @@ body {
 li {
   border-radius: 1.25rem;
   border: 2px solid var(--button-color);
+  box-sizing: border-box;
   background-color: var(--main-color);
 }
 

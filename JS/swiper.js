@@ -1,7 +1,9 @@
 new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 30,
-  cssMode:true,
+  cssMode: true,
+  freeMode: true,
+  draggable: true,
  
   // If we need pagination
   pagination: {
