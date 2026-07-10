@@ -1,4 +1,4 @@
- gsap.from("h1", {
+ gsap.from("h1",  {
              xPercent: -50,
               opacity: 0,
               duration: 1.2,
