@@ -35,6 +35,8 @@ body {
   color: var(--main-color);
   text-align: center;
   letter-spacing: 0.5%;
+  margin-left: 6.75rem;
+  margin-right: 5.5rem;
 }
 
 /* SEÇÃO 1 - SOBRE */
@@ -68,13 +70,6 @@ body {
 /* -------- */
 
 /* SEÇÃO 2 - COMO FUNCIONA */
-.secao2 {
-  display: flex;
-  flex-wrap: row wrap;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-}
 
 #secundaria h1 {
   margin-left: 6.75rem;
@@ -103,7 +98,7 @@ body {
   height: 26.313rem;
   background-color: var(--main-color);
   display: flex;
-  flex-wrap: row wrap;  
+  flex-wrap: row wrap;
   padding-top: 3.188rem;
   padding-bottom: 3.188rem;
   padding-left: 6.75rem;
@@ -179,8 +174,8 @@ body {
 
 /* SEÇÃO 3 - DEPOIMENTOS */
 
-#terciaria{
-  display: flex;
+#terciaria {
+  display: block;
   flex-wrap: row wrap;
 }
 
@@ -209,7 +204,6 @@ body {
 }
 
 .card-wrapper {
-  
   width: 62.5rem;
   padding: 1.25rem 0.625rem;
   overflow: hidden;
@@ -343,6 +337,7 @@ li {
 /* SEÇÃO 4 - FAQ */
 
 .wrapper {
+  display: block;
   max-width: 68.125rem;
   margin-left: 6.75rem;
 }
@@ -477,6 +472,7 @@ aside p {
 }
 
 .newsletterBox {
+  padding-top: 1.75rem;
   margin-left: 6.75rem;
   display: flex;
   gap: 0.25rem;
@@ -527,4 +523,40 @@ aside p {
 
 /* -------- */
 
+@media (min-width: 1290px) {
+  .secao1 {
+    justify-content: center;
+    gap: 2.563rem;
+  }
+
+  #textoSecundaria {
+    justify-self: center;
+  }
+
+  #comoFunciona {
+    justify-content: center;
+  }
+
+  .wrapper {
+    justify-self: center;
+    padding-right: 10rem;
+  }
+
+  .wrapper .faq {
+    width: 66.25rem;
+  }
+
+  .newsletterBox {
+    padding-right: 22.25rem;
+    justify-content: center;
+  }
+
+  aside {
+    padding-right: 4rem;
+  }
+
+  .kiwi {
+    padding-right: 6.25rem;
+  }
+}
 /*border: 2px solid red;*/
