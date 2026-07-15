@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  background: #faf3df;
+}
+
+.ajude {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 30px;
+}
+
+.duasImagens img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.textoAjude {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.textoAjude h1 {
+  font-size: 42px;
+  font-family: 'SN Pro';
+  color: #414e32;
+}
+
+.textoAjude p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: Arial;
+}
+
+.botaoUm {
+  width: 180px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background: #d15385;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botaoUm:hover {
+  background: #414e32;
+}
+.tituloDois {
+  color: #414e32;
+}
+
+.plataforma {
+  padding: 60px;
+}
+
+.plataforma h2 {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: 'SN Pro';
+}
+
+.quadrados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.quadradoUm p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.quadradoUm {
+  background: #414e32;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Arial;
+}
+
+.funciona {
+  padding: 60px;
+}
+
+.conteudoFunciona {
+  min-height: 590px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 30px;
+}
+
+.funciona h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: 'SN Pro';
+  color: #414e32;
+}
+
+.textofunciona {
+  font-size: 20px;
+  line-height: 1.8;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  font-family: Arial;
+}
+
+.final {
+  padding: 70px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.final h2 {
+  font-family: 'SN Pro';
+  color: #414e32;
+}
+
+.final p {
+  max-width: 700px;
+  line-height: 1.6;
+  font-family: Arial;
+}
+
+@media (max-width: 1000px) {
+
+  .ajude,
+  .conteudoFunciona{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .textoAjude{
+    padding: 20px;
+    align-items: center;
+  }
+
+  .textoAjude h1{
+    font-size: 36px;
+  }
+
+  .funciona{
+    padding: 0px;
+  }
+
+  .funciona h2{
+    padding: 20px;
+    margin-left: 40px;
+  }
+
+  .textoAjude p,
+  .textofunciona p{
+    font-size: 18px;
+  }
+
+  .textofunciona p{
+    max-width: 650px;
+  }
+
+  .duasImagens img,
+  .conteudoFunciona img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .quadrados{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px){
+
+  .ajude,
+  .plataforma,
+  .funciona,
+  .final{
+    padding: 30px 20px;
+  }
+
+  .textoAjude{
+    padding: 0;
+  }
+
+  .textoAjude h1{
+    font-size: 30px;
+  }
+
+  .textoAjude p,
+  .textofunciona p{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .textofunciona p{
+    max-width: 500px;
+  }
+
+  .plataforma h2,
+  .funciona h2,
+  .final h2{
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .quadrados{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quadradoUm{
+    width: 100%;
+    height: 50px;
+    padding: 25px;
+  }
+
+  .quadradoUm h2{
+    font-size: 20px;
+  }
+
+  .quadradoUm p{
+    font-size: 16px;
+  }
+
+  .botaoUm{
+    width: 100%;
+    max-width: 250px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .textoAjude h1{
+    font-size: 26px;
+  }
+
+  .textoAjude p,
+  .textofunciona p,
+  .final p{
+    font-size: 15px;
+  }
+
+  .textofunciona{
+    padding: 15px;
+  }
+
+  .textofunciona p{
+    width: 300px;
+    line-height: 1.6;
+  }
+
+  .plataforma h2,
+  .funciona h2,
+  .final h2{
+    font-size: 23px;
+  }
+
+  .duasImagens img,
+  .conteudoFunciona img{
+    border-radius: 15px;
+  }
+
+}
