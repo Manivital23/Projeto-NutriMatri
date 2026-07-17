@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headerLogado {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-family: "SN Pro";
+}
+
+.headerLogado-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  color: black;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a {
+  color: #414E32;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  padding:10px 15px;
+  display:block;
+}
+.dropdown {
+    position: relative;
+}
+    
+.submenu{
+    position: absolute;
+    display:none;
+    position:absolute;
+    background:#D15385;
+    color: white;
+    list-style:none;
+    min-width: 120px;
+    border-radius:8px;
+}
+
+.submenu li a:hover{
+    background: #414E32;
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+.menu a:hover {
+  color: #D15385;
+}
+
+.menu a.inicio {
+  color: #D15385;
+  font-weight: bold;
+}
