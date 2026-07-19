@@ -1,80 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:wght@300;400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-#headerLogado {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  font-family: "SN Pro";
+#headerLogado{
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    font-family:'SN Pro';
 }
 
-.headerLogado-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+.headerLogado-container{
+    width:100%;
+    max-width:1200px;
+    margin: auto;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
 }
 
-.logo {
-  color: black;
-  font-size: 24px;
+.logo{
+    color:#414E32;
+    font-size:28px;
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-  align-items: center;
+.menu{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    list-style:none;
 }
 
 .menu li{
     position:relative;
 }
 
-.menu a {
-  color: #414E32;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s;
-  padding:10px 15px;
-  display:block;
-}
-.dropdown {
-    position: relative;
-}
-    
-.submenu{
-    position: absolute;
-    display:none;
-    position:absolute;
-    background:#D15385;
-    color: white;
-    list-style:none;
-    min-width: 120px;
-    border-radius:8px;
+.menu a{
+    display:block;
+    padding:10px 15px;
+    text-decoration:none;
+    color:#414E32;
+    font-size:18px;
+    transition:.3s;
 }
 
-.submenu li a:hover{
-    background: #414E32;
+.menu a:hover{
+    color:#D15385;
+}
+
+.menu .inicio{
+    color:#D15385;
+    font-weight:bold;
+}
+
+.submenu{
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  list-style: none;
+  min-width: 160px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .dropdown:hover .submenu{
     display:block;
 }
 
-.menu a:hover {
-  color: #D15385;
+.submenu li a {
+  padding: 12px;
+  text-align: center;
 }
 
-.menu a.inicio {
-  color: #D15385;
-  font-weight: bold;
+.submenu li a:hover{
+    background:#D15385;
+    color:#fff;
 }
+
+.fotoUsuario{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    cursor:pointer;
+    border:2px solid #D15385;
+    transition:.3s;
+}
+
+.fotoUsuario:hover{
+    transform:scale(1.05);
+}
+
+.menuUsuario{
+  position: absolute;
+  top: 52px;
+  left: 96%;
+  transform: translateX(-50%);
+  display: none;
+  list-style: none;
+  min-width: 160px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.perfil:hover .menuUsuario{
+    display:block;
+}
+
+.menuUsuario li a{
+    display:block;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#414E32;
+    transition:.3s;
+}
+
+.menuUsuario li a:hover{
+    background:#D15385;
+    color:#fff;
+}
+
+.menu-hamburguer{
+    display:none;
+    font-size:35px;
+    cursor:pointer;
+    color:#414E32;
+}
+
+@media (min-width: 769px) {
+  .dropdown:hover .submenu {
+    display: block;
+  }
+}
+
+.menu-hamburguer {
+  display: none;
+  font-size: 35px;
+  cursor: pointer;
+  color: #414e32;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    position: relative;
+  }
+
+  .menu-hamburguer {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    padding: 15px;
+  }
+
+  .submenu {
+    position: static;
+    transform: none;
+    display: none;
+    width: 100%;
+    background: #8e415b;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .submenu li a {
+    color: white;
+  }
+
+  .submenu li a:hover {
+    background: #414e32;
+  }
+
+  .dropdown.aberto .submenu {
+    display: block;
+  }
+    .dropdown:hover .submenu{
+        display:none;
+    }
+    .dropdown.aberto .submenu{
+        display:block;
+    }
+    .perfil{
+        margin-left:auto;
+        margin-right:15px;
+    }
+    .menuUsuario{
+        top:60px;
+        left: 85%;
+    }
+  }

@@ -1,4 +1,4 @@
-const login = localStorage.getItem("login") === "true";
+const login = localStorage.getItem('login') === 'true';
 
 async function carregar(arquivo, id) {
   const busca = await fetch(arquivo);
@@ -7,9 +7,10 @@ async function carregar(arquivo, id) {
 }
 
 if (login) {
-  carregar("../componentes/headerLogado.html", "headerLogado");
-  carregar("../componentes/footerLogado.html", "footerLogado");
+ carregar('../componentes/headerLogado.html', 'headerLogado');
+  carregar('../componentes/footerLogado.html', 'footerLogado');
 } else {
-  carregar("../componentes/header.html", "header");
-  carregar("../componentes/footer.html", "footer");
+  
+  carregar('../componentes/header.html', 'header');
+  carregar('../componentes/footer.html', 'footer');
 }
