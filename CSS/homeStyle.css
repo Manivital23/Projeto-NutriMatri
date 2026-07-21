@@ -80,6 +80,7 @@ body {
   height: cover;
   padding-bottom: 1.375rem;
 }
+
 #textoSecao2 {
   width: 67.375rem;
   height: 10.5rem;
@@ -240,7 +241,7 @@ body {
   user-select: none;
 }
 
-li {
+.swiper-slide {
   border-radius: 1.25rem;
   border: 2px solid var(--button-color);
   box-sizing: border-box;
