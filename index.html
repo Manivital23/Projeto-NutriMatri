@@ -2,6 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./componentes/header.css" />
+    <link rel="stylesheet" href="./componentes/footer.css" />
     <link rel="stylesheet" href="./CSS/homeStyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -20,9 +22,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <title>Início</title>
   </head>
-  <script src="../js/menuHamburguer.js"></script>
   <body>
-    <header id="headerLogado"></header>
+    <header id="header"></header>
     
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
@@ -34,7 +35,6 @@
     <section class="container" id="primaria">
       <h1 id="chamada">Cuidar de quem cuida é importante!</h1>
       <div class="secao1">
-        <div>
           <p>
             <strong
               >Somos uma plataforma dedicada ao bem-estar de mulheres durante a
@@ -46,13 +46,10 @@
             oferecendo suporte, orientação e acesso facilitado a cuidados
             essenciais para uma maternidade mais saudável, segura e acolhedora.
           </p>
-        </div>
-        <div class="imagem1">
-          <img
+          <img class="imagem1"
             src="./Assets/img/inicio/imagem1.png"
             alt="Fotos de mães segurando seus filhos e de uma nuvem, na frente de todas as imagens há uma flor"
           />
-        </div>
       </div>
     </section>
 
@@ -624,24 +621,25 @@
 
 </div>
     
-    <footer></footer>
+    <footer id="footer"></footer>
+
+    <script src="./JS/menuHamburguer.js"></script>
     
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
-    <script src="../JS/vlibrasWidget.js"> </script>
+    <script src="./JS/vlibrasWidget.js"> </script>
 
-    <script src="../JS/accordion.js"> </script>
+    <script src="./JS/accordion.js"> </script>
 
-    <script src="../JS/btnChange.js"></script>
+    <script src="./JS/btnChange.js"></script>
 
-    <script src="../JS/gsapH1Anim.js"></script>
+    <script src="./JS/gsapH1Anim.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <script src="../JS/swiper.js"></script>
+    <script src="./JS/swiper.js"></script>
 
-<footer id="footerLogado"></footer>
-    <script src="../js/headerFooter.js"></script>
+    <script src="./js/headerFooter.js"></script>
     
   </body>
 </html>
