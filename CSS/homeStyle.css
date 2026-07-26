@@ -190,6 +190,7 @@ body {
 
 .comeco h1 {
   padding-bottom: 1.375rem;
+  margin: 0 auto;
 }
 .comeco p {
   width: 55.313rem;
@@ -239,6 +240,10 @@ body {
 .swiper-wrapper {
   list-style-type: none;
   user-select: none;
+}
+
+.swiper {
+  height: 450px;
 }
 
 .swiper-slide {
@@ -306,6 +311,34 @@ body {
   width: 15px;
   height: 15px;
   background-color: var(--main-color);
+}
+
+.card-wrapper .swiper-button-next,
+.card-wrapper .swiper-button-prev {
+  color: transparent;
+}
+
+.card-wrapper .swiper-button-next:after {
+  content: '';
+  width: 30px;
+  height: 17px;
+  background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  translate: -850px 210px;
+}
+
+.card-wrapper .swiper-button-prev:after {
+  content: '';
+  width: 30px;
+  height: 17px;
+  color: #d15385;
+  background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  translate: 850px 210px;
+  rotate: 180deg;
+  
 }
 
 .containerBotao {
@@ -457,6 +490,7 @@ aside p {
   box-sizing: border-box;
   width: 19.063rem;
   height: 2.063rem;
+  margin: 0 auto;
   border-radius: 1.25rem;
   background-color: var(--button-color);
   border: 1px solid var(--button-shadow);
@@ -703,7 +737,6 @@ aside p {
     margin: 1rem auto auto auto;
     width: 279px;
     display: block;
-  
   }
 
   .secao1 p {
@@ -741,7 +774,7 @@ aside p {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
     justify-items: center;
-    height: 56rem;
+    height: 52rem;
   }
 
   #imagem2 {
@@ -753,9 +786,7 @@ aside p {
   }
 
   .passoAPasso {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    display: block;
   }
 
   .passo {
@@ -783,8 +814,10 @@ aside p {
   }
 
   .comeco p {
-    font-size: 1.5rem;
-    width: 90vw;
+    font-size: 0.875rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    width: 80vw;
     padding-bottom: 1rem;
     text-align: start;
   }
@@ -808,7 +841,6 @@ aside p {
   }
 
   .pannel p {
-    margin: 0 auto;
     width: 80vw;
     font-size: 0.875rem;
     overflow-x: hidden;
@@ -824,6 +856,12 @@ aside p {
 
   .newsletterBox p {
     font-size: 0.875rem;
+  }
+
+  .emailBox {
+    width: 80vw;
+    justify-self: center;
+    margin-right: 2rem;
   }
 
   .newsletterBox {

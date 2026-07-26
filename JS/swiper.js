@@ -3,7 +3,12 @@ new Swiper('.card-wrapper', {
   spaceBetween: 30,
   cssMode: true,
   draggable: true,
- 
+  addIcons: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   
  
   // If we need pagination
