@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --main-color: #faf3df;
+  --green: #414e32;
+  --pink: #d15385;
+  --white: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  background-color: var(--main-color);
+}
+
+.header {
+  height: 75px;
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 64px 0px 0px 50px;
+}
+
+.navbar a {
+  margin: 0;
+  color: var(--green);
+  font-size: 1.5rem;
+  font-family: 'SN Pro', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 80px;
+}
+
+.content {
+  max-width: 600px;
+  padding-left: 55px;
+  display: grid 1fr 1fr;
+
+}
+
+.content h2 {
+  color: var(--green);
+  font-size: 50px;
+  font-family: 'SN Pro', sans-serif;
+}
+
+.content p {
+  font-size: 25px;
+  color: var(--green);
+  font-family: 'SN Pro', sans-serif;
+}
+
+.content button {
+  width: 420px;
+  height: 68px;
+  background-color: var(--pink);
+  color: var(--main-color);
+  border-radius: 25px;
+  font-size: 30px;
+  border: 1px solid #798a65;
+  box-shadow: 3px 3px #798a65;
+  font-family: 'SN Pro', sans-serif;
+}
+
+
+
+.img-home img {
+  background-position: left;
+  width: 272px;
+  height: 375px;
+  border-radius: 10%;
+  padding-left: 5px;
+  display: grid 1fr 1fr;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 135px;
+  height: 400px;
+}
+
+.botão {
+  padding-top: 77px;
+  padding-left: 65px;
+}
+
+.botão a {
+  color: var(--white);
+  background-color: #d15385
+}
+
+.text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SN Pro', sans-serif;
+  font-size: 30px;
+  color: var(--green);
+  margin-top: 20px;
+  margin-left: -480px;
+ 
+}
+
+
+.cards1 {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+  background-color: var(--green);
+  border-radius: 24px;
+  width: 350px;
+  height: 199px;
+  color: var(--white);
+  margin: 0px 5px 0px 0px;
+}
+.cards2 {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+  background-color: var(--green);
+  border-radius: 24px;
+  width: 350px;
+  height: 199px;
+  color: var(--white);
+  margin: 0px 5px 0px 0px;
+}
+.cards3 {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+  background-color: var(--green);
+  border-radius: 24px;
+  width: 350px;
+  height: 199px;
+  color: var(--white);
+  margin: 0px 5px 0px 0px;
+}
+.text-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1177px;
+  margin-right: 49px;
+}
+
+.cards1 h2 {
+  justify-self: center;
+  margin-top: 1.313rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--green);
+}
+
+.cards1 p {
+  width: 278px;
+  letter-spacing: 1px;
+  height: 70px;
+  margin-bottom: 90px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--green);
+}
+
+.cards2 h2 {
+  padding-top: 1.313rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--green);
+}
+
+.cards2 p {
+  width: 278px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--green);
+}
+
+.cards3 h2 {
+  font-weight: bold;
+  padding-top: 1.313rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--green);
+}
+
+.cards3 p {
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  margin-left: 9px;
+  background-color: var(--green);
+}
+.explication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px;
+  width: 1083px;
+  height: 488px;
+
+ 
+  margin-top: 20px;
+}
+
+.explication-title {
+  font-size: 30px;
+  font-family: 'SN Pro', sans-serif;
+  margin-bottom: -120px;
+  margin-right: 885px;
+  color: var(--green);
+}
+
+.imagem-explication img {
+  width: 649px;
+  height: 350px;
+  border-radius: 20px;
+  margin-right: 44px;
+}
+
+.explication-text p {
+  font-size: 26px;
+  color: var(--green);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -50px;
+  width: 471px;
+}
+
+
+.title-final {
+  font-size: 48px;
+  color: var(--green);
+  font-family: 'SN Pro', sans-serif;
+}
+
+.work-interese p {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--green);
+}
+
+.work-interese button {
+  width: 420px;
+  height: 68px;
+  background-color: var(--pink);
+  color: var(--main-color);
+  border-radius: 25px;
+  font-size: 30px;
+  border: 1px solid #798a65;
+  box-shadow: 3px 3px #798a65;
+  font-family: 'SN Pro', sans-serif;
+  margin-top: 50px;
+}
+.work-interese a {
+  color: var(--white);
+  background-color: #d15385;
+}
+
+.box-interese{
+margin-right: 45px;
+width: 1200px;
+}
+
