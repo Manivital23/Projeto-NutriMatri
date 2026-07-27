@@ -23,6 +23,17 @@ body {
   justify-content: center;
 }
 
+#preLoader{
+  background:var(--bg-color) url(../Assets/img/inicio/preLoaderImg.gif) no-repeat center center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  transition: all 1000ms linear;
+
+}
+
 .container {
   background-color: transparent;
   padding-bottom: 3rem;
@@ -305,12 +316,14 @@ body {
   height: 12px;
   opacity: 1;
   background-color: var(--button-shadow);
+  border-radius: 2px;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
   width: 15px;
   height: 15px;
   background-color: var(--main-color);
+  border-radius: 2px;
 }
 
 .card-wrapper .swiper-button-next,
