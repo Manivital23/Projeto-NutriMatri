@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{text-decoration: none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body{
+    background:#FAF3DF;
+    height: calc(100vh - 94px);
+    
+    background-image: url("../assets/imgs/bgs.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 bottom -30px;
+    
+}
+
+header{
+    display: flex;
+   justify-content: space-between;
+   max-width: 1083px;
+   margin: auto;
+   align-items: center;
+   margin-top: 64px;
+    & img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+main{
+    display: flex;
+    max-width: 1083px;
+    margin: auto;
+    gap: 80px;
+    & .container{
+        & form{
+            background-color: #414E32;
+            border-radius: 24px;
+            padding: 44px;
+            display: flex;
+            flex-direction: column;
+          
+            width: 458px;
+            & .input-user{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 35px;
+                & label{
+                    font-size: 24px;
+                    color: #fff;
+                    position: relative;
+                }
+                & input{
+                    border-radius: 20.5px;
+                    padding: 10px;
+                    border: none;
+                }
+                & a{
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+            & .separador{
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-align: center;
+                position: relative;
+                
+
+            }
+            
+        }
+
+        & h1{
+            font-size: 48px;
+            color: #414E32;
+            margin-bottom: 12px;
+            
+        }
+    }
+}
+
+.google{
+    width: 92px;
+    height: 41px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.login{
+    width: 197px;
+    height: 44px;
+    background: #d15385;
+     border: 1px solid #798a65;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.box-login{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Cadastre-se{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.Cadastre-se p{
+    font-size: 14px;
+    color: #ffffff; 
+}
+
+.Cadastre-se a{
+    color: #ffffff; 
+    text-decoration: underline; 
+}
+.Cadastre-se a:hover{
+    color: #d15385;
+    text-decoration: underline;
+}
+
+.span{
+    color: #798A65;
+}
+
+.container{
+    border-left: 2px solid #414E32;
+    padding-left: 60px;
+}
+
+
+
+.input-user{
+    position: relative;
+}
+
+.input-user input{
+    width: 100%;
+    padding-right: 40px;
+}
+
+#olho{
+    position: absolute;
+    right: 12px;
+    top: 52px;
+    width: 22px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px){ 
+    .img-login{
+        display: none;
+    }
+    
+}
+    @media screen and (max-width:1000px){
+  main{
+    flex-direction: column;
+    width: 100%;
+  }
+  .container{
+    width: 100vw;
+    padding-left: 0px;
+  }
+  form{
+    width: 800px;
+    background-color: blue;
+margin: auto;
+
+  }
+    }
+
+    

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf3df;
+  font-family: "SN Pro";
+  color: #3B3C2A;
+  padding: 40px 20px;
+  background-image: url("../assets/imgs/casatro.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+.container, .conteudo {
+  width: 100%;
+  max-width: 1200px;
+    margin: 0 auto;      
+    padding: 30px 40px
+}
+
+.conteudo h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #2D3319;
+  margin-bottom: 24px;
+}
+
+.paragrafo {
+  font-family: Arial;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.bloco {
+  margin-bottom: 32px;
+  font-family: Arial;
+  font-size: 24px;
+}
+
+.profissional {
+  margin-bottom: 24px;
+  font-family: Arial;
+  font-size: 24px;
+  
+}
+
+.profissional h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2D3319;
+}
+
+.profissional p {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-family: Arial;
+}
+
+.profissional a {
+   border-radius: 20px;
+  border: 2px solid #798a65;
+  font-family: SN pro;
+  font-size: 24px;
+  font-weight: 700;
+  color: #faf3df;
+  background-color: #d15385;
+  box-shadow: #798a65 3px 3px;
+  padding: 4px 47px;
+  text-decoration: none;
+}
+
+.profissional a:hover {
+  background-color: #BE5771;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #53583E;
+}
+
+
+
+.logo{
+  display: flex;
+   justify-content: space-between;
+   max-width: 1083px;
+   margin: auto;
+   align-items: center;
+   margin-top: 64px;
+   margin-bottom: 115px;
+}
+
+#canal{
+  font-size: 24px;
+  font-family: Arial;
+}
+
+.importante{
+  font-size: 24px;
+  font-family: Arial;
+}
+
+@media (max-width: 1024px){
+
+.container{
+    gap:40px;
+}
+
+h1{
+    font-size:42px;
+}
+
+h2{
+    font-size:30px;
+}
+
+p{
+    font-size:19px;
+}
+
+.imagem img{
+    max-width:280px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.container{
+    padding:15px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size:22px;
+}
+
+p{
+    font-size:15px;
+}
+
+.flor{
+    width:120px;
+    right:-20px;
+    top:360px;
+}
+
+button{
+    width:100%;
+}
+
+}
