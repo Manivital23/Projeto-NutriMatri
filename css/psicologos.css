@@ -84,9 +84,13 @@ body {
   border-radius: 15px;
   min-height: 220px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   font-family: Arial;
+  transition: transform 0.5s ease;
+}
+
+.quadradoUm:hover {
+  transform: rotate(10deg);
 }
 
 .funciona {

@@ -9,10 +9,9 @@
   font-family: Arial;
 }
 
-.footer-logo h1 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1;
+.footer-logo img {
+  width: 300px; 
+  height: auto;
 }
 
 .footer ul {
