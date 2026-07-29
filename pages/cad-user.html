@@ -1,61 +1,312 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../CSS/cad-user.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro NutriMatri</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section>
-        <div class="formularioCadastro">
-          <form class="form" autocomplete="on" target="_blank" novalidate>
-            <div class="campoForm">
-              <label class="name" for="campoNome">Nome:</label>
-              <input class="campo" type="text" id="campoNome" placeholder="Digite seu nome completo" />
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoNomeDeUsuário"
-                >Nome de usuário:</label
-              >
-              <input type="text" id="campoNomeDeUsuário" placeholder="Digite seu nome de usuário" />
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoTelefoneCelular"
-                >Telefone/Celular:</label
-              >
-              <input type="text" id="campoTelefoneCelular" placeholder="(00)0000-0000"/>
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoSenha">Senha:</label>
-              <input type="password" id="campoSenha" placeholder="Digite sua senha"/>
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoData">Data de Nascimento:</label>
-              <input type="text" id="campoData" placeholder="dd/mm/aa" />
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoGestação">Tempo de Gestação:</label>
-              <input type="text" id="campoGestação" placeholder="Ex.: 20 semanas"/>
-            </div>
-            <div class="campoForm">
-              <label class="name" for="campoEmail">Email:</label>
-              <input type="email" id="campoEmail" required placeholder="seuemail@exemplo.com"/>
-            </div>
-            <div class="campoForm">
-              <div class="upload-foto">
-                <label class="name" for="campoFoto"
-                  >Insira sua foto:
-                  <img
-                    src="../Assets/img/cadastro/fotoDePerfilMae.png"
-                    alt="adicionar foto"
-                  />
+  <!doctype html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="../CSS/cad-user.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cadastro NutriMatri</title>
+    </head>
+    <body>
+      <header></header>
+      <main>
+        <section>
+          <div class="formularioCadastro">
+            <form class="form" autocomplete="on" target="_blank" novalidate>
+              <div class="campoForm">
+                <label class="name" for="campoNome">Nome:</label>
+                <input class="campo" type="text" id="campoNome" placeholder="Digite seu nome completo" />
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoNomeDeUsuário"
+                  >Nome de usuário:</label
+                >
+                <input type="text" id="campoNomeDeUsuário" placeholder="Digite seu nome de usuário" />
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoTelefoneCelular"
+                  >Telefone/Celular:</label
+                >
+                <input type="text" id="campoTelefoneCelular" placeholder="(00)0000-0000"/>
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoSenha">Senha:</label>
+                <input type="password" id="campoSenha" placeholder="Digite sua senha"/>
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoData">Data de Nascimento:</label>
+                <input type="text" id="campoData" placeholder="dd/mm/aa" />
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoGestação">Tempo de Gestação:</label>
+                <input type="text" id="campoGestação" placeholder="Ex.: 20 semanas"/>
+              </div>
+              <div class="campoForm">
+                <label class="name" for="campoEmail">Email:</label>
+                <input type="email" id="campoEmail" required placeholder="seuemail@exemplo.com"/>
+              </div>
+              <div class="campoForm">
+                <div class="upload-foto">
+                  <label class="name" for="campoFoto"
+                    >Insira sua foto:
+                    <img
+                      src="../Assets/img/cadastro/fotoDePerfilMae.png"
+                      alt="adicionar foto"
+                    />
+                  </label>
+                  <input type="file" id="campoFoto" />
+                </div>
+              </div>
+              <div class="campoTermos">
+                <input type="checkbox" id="campoTermos" />
+                <label for="campoTermos">
+                  Li e concordo com os
+                  <a href="#" target="_blank"> Termos de Uso </a>, a
+                  <a href="#" target="_blank"> Política de Privacidade </a>
+                  e autorizo o tratamento dos meus dados pessoais conforme a LGPD.
                 </label>
-                <input type="file" id="campoFoto" />
+              </div>
+          </div>
+        </section>
+        <article class="login">
+          <div>
+            <p>
+              Já possui um cadastro?
+              <a href="#" target="_blank"> <span>Faça o login</span></a>
+            </p>
+          </div>
+        </article>
+        <section>
+          <div class="planos">
+            <div class="textPlano">
+              <h2>Escolha seu plano:</h2>
+            </div>
+            <button class="btnTopo" aria-label="Voltaraotopo">
+              ▲
+            </button>
+            <div class="tipoDePlanos">
+              <div class="social">
+                <h1>Plano Social</h1>
+                <ul>
+                  <li>Agende pelo WhatsApp</li>
+                  <li><strong>$ 30,00/mês</strong></li>
+                  <li>2 consultas/mês (1 por semana)</li>
+                  <li>Tenha acesso a todos os profissionais</li>
+                </ul>
+              </div>
+              <div class="padrao">
+                <h1>Plano Padrão</h1>
+                <ul>
+                  <li>Agende pelo WhatsApp</li>
+                  <li><strong>R$ 275,00/mês</strong></li>
+                  <li>4 consultas/mês (1 por semana)</li>
+                  <li>Tenha acesso a todos os profissionais</li>
+                </ul>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="formulario">
+            <h3>Situação familiar</h3>
+            <p>Você está:</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="situacao" value="gestante" />
+                  Gestante
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="situacao" value="pós-parto  " />
+                  Pós-parto</label
+                >
+              </li>
+            </ul>
+            <p>Quantas pessoas moram na sua residência?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="situacaodois" value="ate1" />
+                  Até 1 pessoa
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="situacaodois" value="entre2a3" />
+                  Entre 2 a 3 pessoas
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="situacaodois" value="entre4a5" />
+                  Entre 4 a 5 pessoas
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="situacaodois" value="maisde5  " />
+                  Mais de 5 pessoas
+                </label>
+              </li>
+            </ul>
+            <h3>Renda</h3>
+            <p>Qual é a renda familiar mensal aproximada?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="renda" value="ate1" />
+                  Até 1 salário mínimo
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="renda" value="entre1a2 " />
+                  Entre 1 a 2 salários mínimos</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="renda" value="entre2a3 " />
+                  Entre 2 a 3 salários mínimos</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="renda" value="acimade3 " />
+                  Acima de 3 salários mínimos</label
+                >
+              </li>
+            </ul>
+            <p>Atualmente você possui alguma fonte de renda?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="rendadois" value="sim" />
+                  Sim
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rendadois" value="não " />
+                  Não</label
+                >
+              </li>
+            </ul>
+            <p>Sua renda é:</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="rendatres" value="fixa" />
+                  Fixa
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rendatres" value="varivel" />
+                  Variável</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="rendatres" value="nãopossui" />
+                  Não possuo renda</label
+                >
+              </li>
+            </ul>
+            <h3>Benefícios sociais</h3>
+            <p>Você recebe algum benefício social?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="beneficio" value="bolsafamilia" />
+                  Bolsa Família
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="beneficio" value="bpc" />
+                  BPC
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="beneficio" value="auxiliogas" />
+                  Auxílio Gás
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="outro" type="radio" name="beneficio" value="outro" />
+                  Outro
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="beneficio" value="naorecebo" />
+                  Não recebo
+                </label>
+              </li>
+            </ul>
+            <p>Você Possui cadastro no CadÚnico?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input type="radio" name="beneficiodois" value="sim" />
+                  Sim
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="beneficiodois" value="nao" />
+                  Não
+                </label>
+              </li>
+            </ul>
+            <h3>Sobre o plano social</h3>
+            <p>Qual o principal motivo para solicitar o plano social?</p>
+            <ul class="option">
+              <li>
+                <label>
+                  <input
+                    type="radio"
+                    name="motivo"
+                    value="dificuldadefinanceira"
+                  />
+                  Dificuldade Financeira
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="motivo" value="desemprego" />
+                  Desemprego
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="motivo" value="altocusto" />
+                  Alto custo dos atendimentos
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="motivo" value="outro" />
+                  Outro:
+                  <input
+                    class="campo-outro"
+                    type="text"
+                    name="situacao_outro"
+                    placeholder="Digite sua resposta"
+                  />
+                </label>
+              </li>
+            </ul>
+            <p>
+              <br />
+              Declaração <br />
+              Ao final, inclua uma confirmação: <br />
+              Declaro que as informações fornecidas são verdadeiras e autorizo seu
+              uso apenas para análise da solicitação do Plano Social.
+            </p>
             <div class="campoTermos">
               <input type="checkbox" id="campoTermos" />
               <label for="campoTermos">
@@ -65,343 +316,94 @@
                 e autorizo o tratamento dos meus dados pessoais conforme a LGPD.
               </label>
             </div>
-        </div>
-      </section>
-      <article class="login">
-        <div>
-          <p>
-            Já possui um cadastro?
-            <a href="#" target="_blank"> <span>Faça o login</span></a>
-          </p>
-        </div>
-      </article>
-      <section>
-        <div class="planos">
-          <div class="textPlano">
-            <h2>Escolha seu plano:</h2>
+        </section>
+        <section class="pagamento">
+          <h2>Escolha a forma de pagamento:</h2>
+          <div class="cartao">
+              <div class="cartaoform">
+                <label>
+                  <input type="radio" name="pagamento" value="credito" />
+                  <div class="opcao">
+                    CARTÃO DE CRÉDITO
+                    <img src="../Assets/img/cadastro/bancos2.png" alt="bancos" />
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="pagamento" value="debito" />
+                  <div class="opcao">
+                    CARTÃO DE DÉBITO
+                    <img src="../Assets/img/cadastro/bancos1.png" alt="bancos" />
+                  </div>
+                </label>
+              </div>
+              <div class="complemento">
+                <label>
+                  Número do cartão
+                  <input
+                    class="campo"
+                    type="text"
+                    id="numero"
+                    placeholder="9999 9999 9999 9999"
+                    maxlength="19"
+                  />
+                </label>
+              </div>
+              <div class="complementodois">
+                <label>
+                  Validade
+                  <input
+                    class="campo"
+                    type="text"
+                    id="validade"
+                    placeholder="06/31"
+                    maxlength="5"
+                    pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+                  />
+                </label>
+                <label>
+                  CVV
+                  <input
+                    class="campo"
+                    type="text"
+                    id="cvv"
+                    placeholder="999"
+                    maxlength="4"
+                    pattern="\d{3,4}"
+                  />
+                </label>
+              </div>
+              <div class="complemento">
+                <label>
+                  Nome Impresso no cartão
+                  <input
+                    class="campo"
+                    type="text"
+                    id="nome"
+                    placeholder="ALEXANDRE FERREIRA"
+                  />
+                </label>
+              </div>
+              <div class="botaoSubmit">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
           </div>
-          <button class="btnTopo" aria-label="Voltaraotopo">
-             ▲
-          </button>
-          <div class="tipoDePlanos">
-            <div class="social">
-              <h1>Plano Social</h1>
-              <ul>
-                <li>Agende pelo WhatsApp</li>
-                <li><strong>$ 30,00/mês</strong></li>
-                <li>2 consultas/mês (1 por semana)</li>
-                <li>Tenha acesso a todos os profissionais</li>
-              </ul>
-            </div>
-            <div class="padrao">
-              <h1>Plano Padrão</h1>
-              <ul>
-                <li>Agende pelo WhatsApp</li>
-                <li><strong>R$ 275,00/mês</strong></li>
-                <li>4 consultas/mês (1 por semana)</li>
-                <li>Tenha acesso a todos os profissionais</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="formulario">
-          <h3>Situação familiar</h3>
-          <p>Você está:</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="situacao" value="gestante" />
-                Gestante
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="situacao" value="pós-parto  " />
-                Pós-parto</label
-              >
-            </li>
-          </ul>
-          <p>Quantas pessoas moram na sua residência?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="situacaodois" value="ate1" />
-                Até 1 pessoa
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="situacaodois" value="entre2a3" />
-                Entre 2 a 3 pessoas
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="situacaodois" value="entre4a5" />
-                Entre 4 a 5 pessoas
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="situacaodois" value="maisde5  " />
-                Mais de 5 pessoas
-              </label>
-            </li>
-          </ul>
-          <h3>Renda</h3>
-          <p>Qual é a renda familiar mensal aproximada?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="renda" value="ate1" />
-                Até 1 salário mínimo
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="renda" value="entre1a2 " />
-                Entre 1 a 2 salários mínimos</label
-              >
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="renda" value="entre2a3 " />
-                Entre 2 a 3 salários mínimos</label
-              >
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="renda" value="acimade3 " />
-                Acima de 3 salários mínimos</label
-              >
-            </li>
-          </ul>
-          <p>Atualmente você possui alguma fonte de renda?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="rendadois" value="sim" />
-                Sim
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="rendadois" value="não " />
-                Não</label
-              >
-            </li>
-          </ul>
-          <p>Sua renda é:</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="rendatres" value="fixa" />
-                Fixa
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="rendatres" value="varivel" />
-                Variável</label
-              >
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="rendatres" value="nãopossui" />
-                Não possuo renda</label
-              >
-            </li>
-          </ul>
-          <h3>Benefícios sociais</h3>
-          <p>Você recebe algum benefício social?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="beneficio" value="bolsafamilia" />
-                Bolsa Família
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="beneficio" value="bpc" />
-                BPC
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="beneficio" value="auxiliogas" />
-                Auxílio Gás
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="beneficio" value="outro" />
-                Outro
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="beneficio" value="naorecebo" />
-                Não recebo
-              </label>
-            </li>
-          </ul>
-          <p>Você Possui cadastro no CadÚnico?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input type="radio" name="beneficiodois" value="sim" />
-                Sim
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="beneficiodois" value="nao" />
-                Não
-              </label>
-            </li>
-          </ul>
-          <h3>Sobre o plano social</h3>
-          <p>Qual o principal motivo para solicitar o plano social?</p>
-          <ul class="option">
-            <li>
-              <label>
-                <input
-                  type="radio"
-                  name="motivo"
-                  value="dificuldadefinanceira"
-                />
-                Dificuldade Financeira
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="motivo" value="desemprego" />
-                Desemprego
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="motivo" value="altocusto" />
-                Alto custo dos atendimentos
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="motivo" value="outro" />
-                Outro:
-                <input
-                  type="text"
-                  name="situacao_outro"
-                  placeholder="Digite sua resposta"
-                />
-              </label>
-            </li>
-          </ul>
-          <p>
-            <br />
-            Declaração <br />
-            Ao final, inclua uma confirmação: <br />
-            Declaro que as informações fornecidas são verdadeiras e autorizo seu
-            uso apenas para análise da solicitação do Plano Social.
-          </p>
-          <div class="campoTermos">
-            <input type="checkbox" id="campoTermos" />
-            <label for="campoTermos">
-              Li e concordo com os
-              <a href="#" target="_blank"> Termos de Uso </a>, a
-              <a href="#" target="_blank"> Política de Privacidade </a>
-              e autorizo o tratamento dos meus dados pessoais conforme a LGPD.
-            </label>
-          </div>
-      </section>
-      <section class="pagamento">
-        <h2>Escolha a forma de pagamento:</h2>
-        <div class="cartao">
-            <div class="cartaoform">
-              <label>
-                <input type="radio" name="pagamento" value="credito" />
-                <div class="opcao">
-                  CARTÃO DE CRÉDITO
-                  <img src="../Assets/img/cadastro/bancos2.png" alt="bancos" />
-                </div>
-              </label>
-              <label>
-                <input type="radio" name="pagamento" value="debito" />
-                <div class="opcao">
-                  CARTÃO DE DÉBITO
-                  <img src="../Assets/img/cadastro/bancos1.png" alt="bancos" />
-                </div>
-              </label>
-            </div>
-            <div class="complemento">
-              <label>
-                Número do cartão
-                <input
-                  class="campo"
-                  type="text"
-                  id="numero"
-                  placeholder="9999 9999 9999 9999"
-                  maxlength="19"
-                />
-              </label>
-            </div>
-            <div class="complementodois">
-              <label>
-                Validade
-                <input
-                  class="campo"
-                  type="text"
-                  id="validade"
-                  placeholder="06/31"
-                  maxlength="5"
-                  pattern="^(0[1-9]|1[0-2])\/\d{2}$"
-                />
-              </label>
-              <label>
-                CVV
-                <input
-                  class="campo"
-                  type="text"
-                  id="cvv"
-                  placeholder="999"
-                  maxlength="4"
-                  pattern="\d{3,4}"
-                />
-              </label>
-            </div>
-            <div class="complemento">
-              <label>
-                Nome Impresso no cartão
-                <input
-                  class="campo"
-                  type="text"
-                  id="nome"
-                  placeholder="ALEXANDRE FERREIRA"
-                />
-              </label>
-            </div>
-            <div class="botaoSubmit">
-              <button type="submit">Enviar</button>
-          </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-<footer></footer>
+        </section>
+      </main>
+      <footer></footer>
+  <footer></footer>
 
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
   </div>
-</div>
 
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget("https://vlibras.gov.br/app");
-</script>
-  </body>
-</html>
+  <script src="../JS/cad-user.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+    </body>
+  </html>
