@@ -1,4 +1,4 @@
-const botaoTemp = document.getElementById('btn-temporario');
+const botaoTemp = document.getElementById('btnTemporario');
 
 botaoTemp.addEventListener('click', () => {
   const textoOriginal = botaoTemp.textContent;
