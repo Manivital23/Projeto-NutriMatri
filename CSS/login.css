@@ -10,7 +10,7 @@ body{
     background:#FAF3DF;
     height: calc(100vh - 94px);
     
-    background-image: url("../assets/imgs/bgs.svg");
+    background-image: url("../Assets/img/login/bgs.svg");
     background-repeat: no-repeat;
     background-position: right 0 bottom -30px;
     
@@ -23,6 +23,7 @@ header{
    margin: auto;
    align-items: center;
    margin-top: 64px;
+   margin-bottom: 20px;
     & img{
         width: 30px;
         height: 30px;
@@ -31,9 +32,11 @@ header{
 
 main{
     display: flex;
-    max-width: 1083px;
+    max-width: 1308px;
+    height: 500px;
     margin: auto;
     gap: 80px;
+     border: 2px solid red;
     & .container{
         & form{
             background-color: #414E32;
@@ -41,7 +44,6 @@ main{
             padding: 44px;
             display: flex;
             flex-direction: column;
-          
             width: 458px;
             & .input-user{
                 display: flex;

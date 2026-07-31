@@ -5,10 +5,10 @@ olho.addEventListener("click", () => {
 
     if (senha.type === "password") {
         senha.type = "text";
-        olho.src = "../assets/imgs/olhoAberto.svg";
+        olho.src = "../assets/img/login/olhoAberto.svg";
     } else {
         senha.type = "password";
-        olho.src = "../assets/imgs/olhoFechado.svg";
+        olho.src = "../assets/img/login/olhoFechado.svg";
     }
 
 });
