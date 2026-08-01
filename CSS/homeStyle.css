@@ -338,7 +338,7 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: -850px 210px;
+  translate: -43vw 13rem;
 }
 
 .card-wrapper .swiper-button-prev:after {
@@ -349,7 +349,7 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: 850px 210px;
+  translate: 41.05vw 13rem;
   rotate: 180deg;
 }
 
@@ -437,6 +437,7 @@ body {
 }
 
 .pannel p {
+  width: 1028px;
   font-family: var(--secondary-font);
   font-size: 1rem;
   letter-spacing: 1%;
@@ -544,17 +545,15 @@ aside p {
 }
 
 .kiwi {
-  width: 516px;
+  width: fit-content;
   justify-self: center;
   margin-bottom: 4rem;
 }
 
 .btnTopo {
-  position: fixed;
   right: 1.75rem;
   bottom: 1.625rem;
   justify-self: end;
-  display: flex;
   border-radius: 30px;
   background-color: var(--main-color);
   height: 3.75rem;
@@ -562,6 +561,27 @@ aside p {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  animation-name: appear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    display: none;
+    position: fixed;
+  }
+  10% {
+    opacity: 1;
+    display: block;
+    position: fixed;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+    position: fixed;
+  }
 }
 
 .btnTopo img {
