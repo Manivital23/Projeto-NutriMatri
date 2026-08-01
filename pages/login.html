@@ -10,7 +10,7 @@
   <body>
    
     <header>
-      <a href="#"
+      <a href="../index.html"
         ><img
           width="50"
           height="50"
@@ -19,10 +19,13 @@
       /></a>
       <img src="../Assets/img/logos/isotipoAs02Principal.svg" alt="" />
     </header>
-     <h1>Login</h1>
+     <div class="lado-direito">
+        <h1>Login</h1>
+      </div>
     <main>
      
       <img class="img-login" src="../Assets/img/login/videoLogin.gif" alt="" />
+      
       
       <div class="container">
       
@@ -50,15 +53,24 @@
           </div>
           <div class="Cadastre-se">
             <p>
-              Cadastre-se | <a href="#">Profissional</a> - <a href="#">Mãe</a>
+              Cadastre-se | <a href="#">Profissional</a> - <a href="../pages/cad-user.html">Mãe</a>
             </p>
           </div>
         </form>
       </div>
     </main>
-   
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="../js/senha.js"></script>
-   
+   <script src="../js/login.js"></script>
   </body>
 </html>
 
