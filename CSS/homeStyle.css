@@ -338,7 +338,7 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: -43vw 13rem;
+  translate: -43vw 12.9rem;
 }
 
 .card-wrapper .swiper-button-prev:after {
@@ -349,7 +349,7 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: 41.05vw 13rem;
+  translate: 41.05vw 12.9rem;
   rotate: 180deg;
 }
 
@@ -571,7 +571,7 @@ aside p {
     display: none;
     position: fixed;
   }
-  10% {
+  30% {
     opacity: 1;
     display: block;
     position: fixed;
@@ -629,9 +629,17 @@ aside p {
   .kiwi {
     padding-right: 6.25rem;
   }
+
+  .card-wrapper .swiper-button-next:after {
+    translate: -45vw 12.9rem;
+  }
+
+  .card-wrapper .swiper-button-prev:after {
+    translate: 43.75vw 12.9rem;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 834px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   body {
     overflow-x: hidden;
   }
@@ -726,18 +734,12 @@ aside p {
     justify-self: center;
   }
 
-  .kiwi {
-    margin-left: 9.5rem;
-    margin-right: 5.5rem;
-    margin-bottom: 4rem;
-  }
-
   .kiwi img {
     width: 450px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 928px) {
+@media (max-width: 575.98px) {
   body {
     overflow-x: hidden;
     margin: 0px;
@@ -746,7 +748,7 @@ aside p {
   #chamada {
     justify-self: center;
     white-space: nowrap;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     text-align: center;
     letter-spacing: 0%;
     margin-left: 5.75rem;
@@ -839,15 +841,13 @@ aside p {
   }
 
   .comeco h1 {
-    justify-self: center;
     font-size: 1.5rem;
-    text-align: start;
-    margin: 0rem auto;
+    padding-right: 1.5rem;
   }
 
   .comeco p {
     font-size: 0.875rem;
-    padding-left: 5.5rem;
+    padding-left: 4.5rem;
     padding-right: 5.5rem;
     width: 80vw;
     padding-bottom: 1rem;
@@ -867,6 +867,24 @@ aside p {
     margin: 0 auto;
   }
 
+  .depoimento p {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    width: 15.25rem;
+    height: 7.875rem;
+    color: var(--bg-color);
+    padding-bottom: 3.563rem;
+    padding-top: 0.875rem;
+  }
+
+  .card-wrapper .swiper-button-next:after {
+    translate: -28.95vw 12.95rem;
+  }
+
+  .card-wrapper .swiper-button-prev:after {
+    translate: 22.25vw 12.95rem;
+  }
+
   .accordion {
     font-size: 0.875rem;
     align-items: center;
@@ -879,32 +897,32 @@ aside p {
   }
 
   #quinto h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.25rem;
     text-align: start;
     justify-self: center;
     width: 90vw;
+    height: 2px;
   }
 
   .newsletterBox p {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    height: 50px;
+    width: 70vw;
+    margin-left: 0.75rem;
   }
 
   .emailBox {
     width: 80vw;
     justify-self: center;
-    margin-right: 2rem;
   }
 
   .newsletterBox {
     display: block;
     margin: 0rem auto;
-    justify-self: center;
   }
 
   .kiwi img {
-    width: 225px;
-    margin-left: 8.5rem;
+    width: 400px;
   }
 }
 
