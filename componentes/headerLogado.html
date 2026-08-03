@@ -1,24 +1,26 @@
 <header id="headerLogado">
   <div class="headerLogado-container">
-    <h2 class="logo">Logo</h2>
+    <div class="header-logo">
+    <img src="../assets/img/logos/isotipoAs02Principal.svg" alt="Logo NutriMatri" />
+  </div>
 
     <nav>
       <ul class="menu">
         <li>
-          <a href="#" class="inicio">Início</a>
+          <a href="../index.html" class="inicio">Início</a>
         </li>
         <li>
-          <a href="#">Ache um profissional</a>
+          <a href="../pages/acheProfissional.html">Ache um profissional</a>
         </li>
         <li class="dropdown">
           <a href="#">Trabalhe Conosco ▾</a>
           <ul class="submenu">
-            <li><a href="#">Nutricionista</a></li>
-            <li><a href="#">Psicólogo</a></li>
+            <li><a href="../pages/nutricionista.html">Nutricionista</a></li>
+            <li><a href="../pages/psicologos.html">Psicólogo</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="../pages/blog.html">Blog</a>
         </li>
       </ul>
     </nav>
@@ -29,9 +31,9 @@
         class="fotoUsuario"
       />
       <ul class="menuUsuario">
-        <li><a href="#">Alterar senha</a></li>
-        <li><a href="#">Excluir conta</a></li>
-        <li><a href="#">Sair</a></li>
+        <li><a href="#" onclick="alterarSenha()">Alterar senha</a></li>
+        <li><a href="#" onclick="excluirConta()">Excluir conta</a></li>
+        <li><a href="#" onclick="sair()">Sair</a></li>
       </ul>
     </div>
     <div class="menu-hamburguer">☰</div>

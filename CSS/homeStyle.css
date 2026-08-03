@@ -23,15 +23,15 @@ body {
   justify-content: center;
 }
 
-#preLoader{
-  background:var(--bg-color) url(../Assets/img/inicio/preLoaderImg.gif) no-repeat center center;
+#preLoader {
+  background: var(--bg-color) url(../Assets/img/inicio/preLoaderImg.gif)
+    no-repeat center center;
   background-size: 25%;
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 9999;
   transition: all 1000ms linear;
-
 }
 
 .container {
@@ -163,8 +163,6 @@ body {
 }
 
 #bpro {
-  width: 19.125rem;
-  height: 2.563rem;
   border-radius: 1.25rem;
   border: 2px solid #798a65;
   font-family: var(--primary-font);
@@ -173,8 +171,10 @@ body {
   color: #faf3df;
   background-color: #d15385;
   box-shadow: #798a65 3px 3px;
+  padding: 0.25rem 1.375rem;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #bpro:hover {
@@ -338,7 +338,7 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: -850px 210px;
+  translate: -43vw 12.9rem;
 }
 
 .card-wrapper .swiper-button-prev:after {
@@ -349,9 +349,8 @@ body {
   background-image: url(https://img.icons8.com/ios-glyphs/30/d15385/play--v1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  translate: 850px 210px;
+  translate: 41.05vw 12.9rem;
   rotate: 180deg;
-  
 }
 
 .containerBotao {
@@ -360,11 +359,10 @@ body {
   justify-self: center;
 }
 
-.botao {
-  width: 19.125rem;
-  height: 2.563rem;
+#bproDois {
   border-radius: 1.25rem;
   border: 2px solid #798a65;
+  padding: 0.563rem 5.438rem;
   font-family: SN pro;
   font-size: 1.5rem;
   font-weight: 700;
@@ -373,9 +371,10 @@ body {
   box-shadow: #798a65 3px 3px;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.botao:hover {
+#bproDois:hover {
   border: 2px solid #d15385;
   background-color: #798a65;
   box-shadow: #d15385 3px 3px;
@@ -438,6 +437,7 @@ body {
 }
 
 .pannel p {
+  width: 1028px;
   font-family: var(--secondary-font);
   font-size: 1rem;
   letter-spacing: 1%;
@@ -545,17 +545,15 @@ aside p {
 }
 
 .kiwi {
-  width: 516px;
+  width: fit-content;
   justify-self: center;
   margin-bottom: 4rem;
 }
 
 .btnTopo {
-  position: fixed;
   right: 1.75rem;
   bottom: 1.625rem;
   justify-self: end;
-  display: flex;
   border-radius: 30px;
   background-color: var(--main-color);
   height: 3.75rem;
@@ -563,6 +561,27 @@ aside p {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  animation-name: appear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    display: none;
+    position: fixed;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+    position: fixed;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+    position: fixed;
+  }
 }
 
 .btnTopo img {
@@ -610,9 +629,17 @@ aside p {
   .kiwi {
     padding-right: 6.25rem;
   }
+
+  .card-wrapper .swiper-button-next:after {
+    translate: -45vw 12.9rem;
+  }
+
+  .card-wrapper .swiper-button-prev:after {
+    translate: 43.75vw 12.9rem;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 834px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   body {
     overflow-x: hidden;
   }
@@ -707,18 +734,12 @@ aside p {
     justify-self: center;
   }
 
-  .kiwi {
-    margin-left: 9.5rem;
-    margin-right: 5.5rem;
-    margin-bottom: 4rem;
-  }
-
   .kiwi img {
     width: 450px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 928px) {
+@media (max-width: 575.98px) {
   body {
     overflow-x: hidden;
     margin: 0px;
@@ -727,7 +748,7 @@ aside p {
   #chamada {
     justify-self: center;
     white-space: nowrap;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     text-align: center;
     letter-spacing: 0%;
     margin-left: 5.75rem;
@@ -820,15 +841,13 @@ aside p {
   }
 
   .comeco h1 {
-    justify-self: center;
     font-size: 1.5rem;
-    text-align: start;
-    margin: 0rem auto;
+    padding-right: 1.5rem;
   }
 
   .comeco p {
     font-size: 0.875rem;
-    padding-left: 5.5rem;
+    padding-left: 4.5rem;
     padding-right: 5.5rem;
     width: 80vw;
     padding-bottom: 1rem;
@@ -848,6 +867,24 @@ aside p {
     margin: 0 auto;
   }
 
+  .depoimento p {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    width: 15.25rem;
+    height: 7.875rem;
+    color: var(--bg-color);
+    padding-bottom: 3.563rem;
+    padding-top: 0.875rem;
+  }
+
+  .card-wrapper .swiper-button-next:after {
+    translate: -28.95vw 12.95rem;
+  }
+
+  .card-wrapper .swiper-button-prev:after {
+    translate: 22.25vw 12.95rem;
+  }
+
   .accordion {
     font-size: 0.875rem;
     align-items: center;
@@ -860,32 +897,32 @@ aside p {
   }
 
   #quinto h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.25rem;
     text-align: start;
     justify-self: center;
     width: 90vw;
+    height: 2px;
   }
 
   .newsletterBox p {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    height: 50px;
+    width: 70vw;
+    margin-left: 0.75rem;
   }
 
   .emailBox {
     width: 80vw;
     justify-self: center;
-    margin-right: 2rem;
   }
 
   .newsletterBox {
     display: block;
     margin: 0rem auto;
-    justify-self: center;
   }
 
   .kiwi img {
-    width: 225px;
-    margin-left: 8.5rem;
+    width: 400px;
   }
 }
 

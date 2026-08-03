@@ -2,8 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./componentes/header.css" />
-    <link rel="stylesheet" href="./componentes/footer.css" />
+    <link id="css-header" rel="stylesheet" href="./componentes/header.css">
+    <link id="css-footer" rel="stylesheet" href="./componentes/footer.css">
     <link rel="stylesheet" href="./CSS/homeStyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -63,7 +63,7 @@
           nutricionistas e psicólogos, por meio de planos de atendimento.
           Oferecemos opções de planos comuns e sociais, ampliando o acesso ao
           cuidado físico e emocional para que mais mulheres possam viver a
-          maternidade com saúde, acolhimento e qualidade de vida. 
+          maternidade com saúde, acolhimento e qualidade de vida. <br>
           Também disponibilizamos artigos, dicas e materiais informativos em nosso blog, além de uma newsletter com orientações e novidades para acompanhar cada fase da maternidade.
         </p>
        </div>
@@ -75,7 +75,7 @@
         <div class="passoAPasso">
             <!-- <a target="_blank" href="https://icons8.com/icon/7695/search">Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
             <div class="passo">
-              <p>1.Busque um profissional de acordo com sua necessidade</p>
+              <p>1. Busque um profissional de acordo com sua necessidade</p>
               <img
                 width="60"
                 height="60"
@@ -85,7 +85,7 @@
             </div>
             <!--<a target="_blank" href="https://icons8.com/icon/85088/whatsapp">WhatsApp</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
             <div class="passo">
-              <p>2.Clique no botão do WhatsApp no perfil do profissional</p>
+              <p>2. Clique no botão do WhatsApp no perfil do profissional</p>
               <img
                 width="60"
                 height="60"
@@ -95,7 +95,7 @@
             </div>
             <!--<a target="_blank" href="https://icons8.com/icon/37965/handshake-heart">Agreement</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
             <div class="passo">
-              <p>3.Combinem juntos os detalhes do atendimento</p>
+              <p>3. Combinem juntos <br> os detalhes do atendimento</p>
               <img
                 width="60"
                 height="60"
@@ -105,7 +105,7 @@
             </div>
             <!--<a target="_blank" href="https://icons8.com/icon/85793/laptop">Laptop</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
             <div class="passo">
-              <p>4.Faça o encontro remotamente pelo seu computador ou celular</p>
+              <p>4. Faça o encontro remotamente pelo seu computador ou celular</p>
               <img
                 width="60"
                 height="60"
@@ -114,9 +114,7 @@
               />
             </div>
             <div class="buscar">
-        <button class="botao" id="bpro">
-         Busque um profissional
-          </button>
+              <a id="bpro" class="botao" href="./pages/login.html"  >Busque um profissional</a>
           </div>
         </div>
         
@@ -455,9 +453,11 @@
         
       </div>
       </div>
-      <div class="containerBotao"> <button class="botao">
+      <div class="containerBotao"> 
+        <a id="bproDois" class="botao" href="./pages/login.html " >
           Comece agora!
-          </button></div>
+        </a>
+      </div>
      
 
           
@@ -610,7 +610,7 @@
           <p>Assine nossa newsletter e receba conteúdos exclusivos diariamente!</p>
         <div class="emailBox">
           <input type="email" placeholder="Insira seu e-mail"></input>
-          <button type="submit" class="inscrito" id="btn-temporario"><span>Inscreva-se</span></button>
+          <button type="submit" class="inscrito" id="btnTemporario"><span>Inscreva-se</span></button>
         </div>
       </div>
     </aside>
@@ -626,24 +626,16 @@
     <footer id="footer"></footer>
 
     <script src="./JS/preLoader.js"></script>
-
     <script src="./JS/menuHamburguer.js"></script>
-    
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
     <script src="./JS/vlibrasWidget.js"> </script>
-
     <script src="./JS/accordion.js"> </script>
-
     <script src="./JS/btnChange.js"></script>
-
-    <script src="./JS/gsapH1Anim.js"></script>
-
+    <script src="./JS/gsapAnim.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <script src="./JS/swiper.js"></script>
-
     <script src="./js/headerFooter.js"></script>
-    
+    <script src="./JS/bHome.js"></script>
+    <script src="./JS/btnTopo.js"></script>
   </body>
 </html>

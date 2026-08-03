@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="..//css/login.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+   
+    <header>
+      <a href="../index.html"
+        ><img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/long-arrow-left.png"
+          alt="long-arrow-left"
+      /></a>
+      <img src="../Assets/img/logos/isotipoAs02Principal.svg" alt="" />
+    </header>
+     <div class="lado-direito">
+        <h1>Login</h1>
+      </div>
+    <main>
+     
+      <img class="img-login" src="../Assets/img/login/videoLogin.gif" alt="" />
+      
+      
+      <div class="container">
+      
+        <form>
+          <div class="input-user">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="input-user">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" />
+
+            <img src="../assets/img/login/olhoFechado.svg" id="olho" alt="Mostrar senha" />
+          </div>
+          <div class="separador">
+            <span class="span">──────────</span>
+            OU
+            <span class="span">──────────</span>
+          </div>
+          <a href="#" class="google"
+            ><img src="../Assets/img/login/google.svg" alt="google"
+          /></a>
+          <div class="box-login">
+            <a href="#" class="login">Login</a>
+          </div>
+          <div class="Cadastre-se">
+            <p>
+              Cadastre-se | <a href="#">Profissional</a> - <a href="../pages/cad-user.html">Mãe</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/senha.js"></script>
+   <script src="../js/login.js"></script>
+  </body>
+</html>
+

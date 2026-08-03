@@ -7,12 +7,12 @@
   padding: 50px 60px;
   align-items: start;
   margin-top: 20px;
+  font-family: Arial;
 }
 
-.footerLogado-logo h1 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1;
+.footer-logo img {
+  width: 300px; 
+  height: auto;
 }
 
 .footerLogado ul {
@@ -59,4 +59,19 @@
   padding: 15px;
   font-size: 13px;
   color: #f3e7e2;
+}
+
+@media (max-width:480px){
+
+.footerLogado{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:20px;
+    text-align:center;
+}
+
+.redeSocialLogado{
+    justify-content:center;
+}
+
 }

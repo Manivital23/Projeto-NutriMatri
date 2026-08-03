@@ -25,9 +25,9 @@
     position:relative;
 }
 
-.logo{
-    color:#414E32;
-    font-size:28px;
+.header-logo img {
+  width: 50px;
+  height: auto;
 }
 
 .menu{
