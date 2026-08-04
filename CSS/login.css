@@ -207,18 +207,42 @@ main {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
-  main {
+
+@media screen and (max-width: 1024px) {
+
+.container::before {
+    display: none;
+}
+
+  header{
+    padding: 0 30px;
+  }
+
+  
+
+  main{
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    height: auto;
+    padding: 20px;
   }
-  .container {
-    width: 100vw;
-    padding-left: 0px;
+
+  .img-login{
+    width: 320px;
+    height: auto;
   }
-  form {
-    width: 800px;
-    background-color: blue;
-    margin: auto;
+
+  .lado-direito h1{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
   }
+
+  .container form{
+    width: 420px;
+  }
+
 }
