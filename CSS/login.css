@@ -10,9 +10,9 @@
 body {
   background: #faf3df;
   height: 100%;
-  background-image: url('../Assets/img/login/bgs.svg');
+  background-image: url('../Assets/img/paginaDeDenuncia/florFundo.png');
   background-repeat: no-repeat;
-  background-position: right 0 bottom -55px;
+  background-position: right -30px bottom -250px;
 }
 
 header {
@@ -31,11 +31,10 @@ header {
 
 main {
   display: flex;
-  max-width: 1308px;
+  max-width: fit-content;
   height: 500px;
-  margin: auto;
+  margin: 0 auto;
   gap: 80px;
-  margin-right: 80px;
   & .container {
     & form {
       background-color: #414e32;
@@ -86,14 +85,16 @@ main {
 }
 
 .lado-direito {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 330px;
 }
 
 .lado-direito h1 {
-  margin-bottom: 10px;
-  margin-left: 250px;
+  
+  
   color: #414e32;
   font-size: 45px;
   font-family: 'SN Pro';
@@ -178,7 +179,7 @@ main {
 .container::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -10px;
   top: -80px;
   bottom: -30px;
   width: 2px;
@@ -206,6 +207,12 @@ main {
   .img-login {
     display: none;
   }
+
+  body{
+ background-image: none;
+  }
+
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -218,21 +225,25 @@ main {
     padding: 0 30px;
   }
 
-  
 
   main{
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin: 0;
+    margin: 0 auto;
     height: auto;
     padding: 20px;
   }
 
   .img-login{
-    width: 320px;
+    width: 440px;
     height: auto;
+    margin: 20px;
+  }
+
+  .lado-direito{
+    justify-self: center;
   }
 
   .lado-direito h1{
@@ -245,4 +256,14 @@ main {
     width: 420px;
   }
 
+}
+
+@media screen and (max-width: 1280px){
+ .img-login{
+  margin-left: 55px;
+ }
+
+ .lado-direito{
+  margin-left: 385px;
+ }
 }
