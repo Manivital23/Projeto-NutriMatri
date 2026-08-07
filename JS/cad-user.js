@@ -1,6 +1,13 @@
 const planoSocial = document.querySelector(".tipoDePlanos .social");
 const planoPadrao = document.querySelector(".tipoDePlanos .padrao");
 const formulario = document.querySelector(".formulario");
+const submit = document.getElementById("botaoSubmit2")
+const btnTopo = document.querySelector(".btnTopo");
+const btnEnviar = document.querySelector(".btnsubmit")
+
+btnEnviar.addEventListener("click",()=>{
+  window.location.href = "http://127.0.0.1:5501/index.html"
+})
 
 formulario.style.display = "none";
 
@@ -17,8 +24,6 @@ planoPadrao.addEventListener("click", () => {
   planoSocial.classList.remove("ativo");
   planoPadrao.classList.remove("ativo");
 });
-
-const btnTopo = document.querySelector(".btnTopo");
 
 btnTopo.style.display = "none";
 

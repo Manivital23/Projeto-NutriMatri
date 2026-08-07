@@ -3,11 +3,15 @@
     <head>
       <meta charset="UTF-8" />
       <link rel="stylesheet" href="../CSS/cad-user.css" />
+      <link rel="stylesheet" href="../componentes/header.css" />
+      <link rel="stylesheet" href="../componentes/footer.css" />
+      <link rel="icon" type="image/x-icon" href="../Assets/img/logos/isotipoAs02Principal.svg"> 
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Cadastro NutriMatri</title>
     </head>
     <body>
-      <header></header>
+      <header id ="header">
+      </header>
       <main>
         <section>
           <div class="formularioCadastro">
@@ -383,27 +387,27 @@
                   />
                 </label>
               </div>
-              <div class="botaoSubmit">
-                <button type="submit">Enviar</button>
+              <div id="botaoSubmit2"class="botaoSubmit">
+                <button class="btnsubmit" type="submit">Enviar</a></button>
             </div>
             </form>
           </div>
         </section>
       </main>
       <footer></footer>
-  <footer></footer>
-
+  <footer id="footer"></footer>
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
-
   <script src="../JS/cad-user.js"></script>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
   </script>
+  <script src="../js/headerFooter.js"></script>
+  <script src="../JS/menuHamburguer.js"></script>
     </body>
   </html>
