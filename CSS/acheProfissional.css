@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 /* ===========================
    CONFIGURAÇÕES GERAIS
 =========================== */
@@ -29,6 +30,10 @@ header{
     padding:0 60px;
 }
 
+.banner h1{
+    font-family: "SN Pro";
+    font-size: 4rem;
+}
 
 .logo img{
     width:70px;
@@ -72,7 +77,12 @@ main{
     width:90%;
     margin:auto;
 }
-
+.scroll {
+    justify-self: center;
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
 
 /* ===========================
    BANNER
@@ -81,7 +91,7 @@ main{
 
 .banner{
     margin-top:30px;
-    background-image:url("./1img.jpg.png");
+    background-image:url("../Assets/img/acheUmProfissional/imagem1.png");
     background-size:cover;
     background-position:center;
     border-radius:25px;
@@ -98,15 +108,15 @@ main{
 
 
 .textoBanner h1{
-    color: #3D4533;
-    font-size:45px;
+    color: #414e32;
+    font-size:64px;
     margin-bottom:15px;
 }
 
 
 .textoBanner p{
     color: #D15385;
-    font-size:18px;
+    font-size:24px;
     line-height:1.5;
 }
 
@@ -135,28 +145,30 @@ main{
 .botoes{
     margin-top:30px;
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 
 .botoes button{
-    background-color:#8E415B;
     color:white;
     border:none;
-    padding:12px 190px;
-    border-radius:25px;
-    font-size:20px;
-    margin-right:18px;
+    padding:14px 145px;
+    border-radius:40px;
+    font-size:2rem;
+    font-weight: 700;
+    font-family: "SN Pro";
     cursor:pointer;
 }
 .botoes button:first-child{
-    background-color:#AE456F;
-    border:2px solid #3D4533;
+border: 2px solid #3D4533;
+background-color: #AE456F;
+box-shadow: #3D4533 3px 3px;
 }
 
 .botoes button:last-child{
-    background-color:#38402f;
-    border:2px solid #D15385;
+border: 2px solid #AE456F;
+background-color: #3D4533;
+box-shadow: #AE456F 3px 3px;
 }
 
 .botoes button:hover{
@@ -227,40 +239,35 @@ main{
 .card{
     background-color:#8E415B;
     margin-top:35px;
-    border-radius:25px;
-    padding:25px;
+    border-radius:40px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     color:white;
-}
-
-.card img {
-    padding: 0;
-    margin: 0px;
-
+    height: 326px;
 }
 
 
 /* ===========================
    IMAGENS DOS CARDS
 =========================== */
+.segundaAba .card{
+    background-color:#38402f;
+}
 
+.segundaAba .texto a{
+    background-color: #798A65;
+    border-color: #D15385;
+}
 
 .foto{
-    width:35%;
     display:flex;
-    justify-content:center;
+    height: 326px;
 }
-
 
 .foto img{
-    width:1000px;
-    height:300px;
-    object-fit:cover;
-    border-radius:20px;
+    border-radius: 40px;
 }
-
 
 /* ===========================
    TEXTO DOS CARDS
@@ -268,6 +275,7 @@ main{
 
 .texto{
     width:55%;
+    padding: 25px;
 }
 
 
@@ -278,16 +286,20 @@ main{
 
 
 .texto h4{
-    font-size:18px;
+    font-family: "SN Pro";
+    font-size:1.5rem;
     font-weight:400;
-    margin-bottom:15px;
+    color: #fff;
+}
+ .subtitulo {
+    font-weight:100;
 }
 
-
 .estrelas{
-    color:#FAF3DF;
-    font-size:22px;
-    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
 }
 
 
@@ -310,24 +322,27 @@ main{
 
 
 .texto a{
-    display:inline-block;
+    display:inline-flex;
     margin-top:20px;
-    background-color:white;
-    color:#8E415B;
+    background-color: #47212e;
+    color:#ffff;
     text-decoration:none;
     padding:10px 25px;
-    border-radius:20px;
+    border-radius:10px;
+    border: 1.5px solid #798a65;
     font-size:15px;
+    align-items: center;
+    gap: 30px;
 }
-
 
 .texto a i{
     margin-right:8px;
+    font-size: 25px;
 }
 
 
 .texto a:hover{
-    background-color:#eeeeee;
+background-color:#AE456F;
 }
 
 
@@ -336,20 +351,11 @@ main{
 =========================== */
 
 
-.card:nth-child(even){
-    background-color:#8E415B;
-}
 
 
 /* ===========================
    AJUSTES PARA IMAGENS
 =========================== */
-
-
-.card:nth-child(3){
-    margin-bottom:35px;
-}
-
 
 /* ===========================
    RESPONSIVIDADE
