@@ -706,6 +706,14 @@ aside p {
     margin-right: 5.5rem;
   }
 
+  .card-wrapper .swiper-button-next:after {
+    translate: -40vw 12.9rem;
+  }
+
+  .card-wrapper .swiper-button-prev:after {
+    translate: 36.95vw 12.9rem;
+  }
+
   .accordion {
     font-size: 1.25rem;
     justify-content: space-between;
@@ -724,14 +732,14 @@ aside p {
   }
 
   .newsletterBox p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .newsletterBox {
     display: block;
     margin-left: 6.75rem;
     margin-right: 5.5rem;
-    justify-self: center;
+    justify-items: center;
   }
 
   .kiwi img {
