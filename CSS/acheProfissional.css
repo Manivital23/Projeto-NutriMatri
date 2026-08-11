@@ -363,7 +363,7 @@ background-color:#AE456F;
 =========================== */
 
 
-@media(max-width:900px){
+@media(max-width:575.98px){
     header{
         padding:0 20px;
     }
@@ -379,16 +379,62 @@ background-color:#AE456F;
     main{
         width:95%;
     }
+header{
+    width:100%;
+    height:80px;
+    background-color:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 60px;
+}
 
-    /* Banner */
+.banner h1{
+    font-family: "SN Pro";
+    font-size: 4rem;
+}
 
-    .banner{
-        flex-direction:column;
-        text-align:center;
-    }
+.logo img{
+    width: 50px;
+}
 
 
-    .textoBanner{
+nav{
+    display:flex;
+    gap:35px;
+}
+
+
+nav a{
+    color:#3D4533;
+    text-decoration:none;
+    font-size:16px;
+}
+
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.profissional {
+  color: #D15385;
+}
+
+
+.usuario i{
+    color: #8E415B;
+    font-size:38px;
+}
+
+.banner{
+    background-position:-555px;
+    border-radius:25px;
+    padding:10px;
+    width: 100%;
+    height: 10%;
+}
+
+.textoBanner{
         width:100%;
     }
 
@@ -404,15 +450,27 @@ background-color:#AE456F;
 
 
     .imagemBanner{
-        width:80%;
+        width:50%;
+        height: 25px;
         margin-top:20px;
     }
 
-    /* Pesquisa */
+.botoes{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
 
-    .pesquisa{
-        flex-direction:column;
+
+.botoes button{
+    padding:10px 50px;
+    font-size:1rem;
+}
+
+.pesquisa{
+        flex-direction:row;
         gap:15px;
+        margin-top: 35px;
     }
 
     .pesquisa input{
@@ -423,50 +481,308 @@ background-color:#AE456F;
     .pesquisa button{
         width:100%;
         height:45px;
-    }
+    }}
+
+.barraPesquisa{
+    width: 800px;
+}
+
 
     /* Cards */
 
     .card{
+        height: fit-content;
         flex-direction:column;
-        text-align:center;
+        margin-bottom: 50px;
+    }
+
+    .card:nth-child(even){
+        flex-direction:column-reverse;
     }
 
     .foto{
         width:100%;
-        margin-bottom:20px;
-    }
-
-
-
-    .foto img{
-        width:220px;
-        height:220px;
+        height: 275.5px;
     }
 
     .texto{
         width:100%;
     }
 
+    .texto a{
+    display:inline-flex;
+    margin-top:20px;
+    background-color: #47212e;
+    color:#ffff;
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:10px;
+    border: 1.5px solid #798a65;
+    font-size:15px;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 1px;
 }
 
 /* ===========================
    PEQUENOS AJUSTES
 =========================== */
 
-button{
-    font-family:'Poppins', sans-serif;
+@media(min-width:768px)and (max-width:991.98px){
+
+.banner h1{
+    font-family: "SN Pro";
+    font-size: 4rem;
+}
+
+.logo img{
+    width: 50px;
 }
 
 
-input{
-    font-family:'Poppins', sans-serif;
+nav{
+    display:flex;
+    gap:35px;
 }
 
 
+nav a{
+    color:#3D4533;
+    text-decoration:none;
+    font-size:16px;
+}
 
-img{
-    max-width:100%;
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.profissional {
+  color: #D15385;
+}
+
+
+.usuario i{
+    color: #8E415B;
+    font-size:38px;
+}
+
+.banner{
+    border-radius:25px;
+    padding:10px;
+    width: 100%;
+    height: 300px;
+}
+
+.textoBanner{
+        width: 50%;
+    }
+
+
+    .textoBanner h1{
+        font-size:35px;
+    }
+
+
+    .textoBanner p{
+        font-size:16px;
+    }
+
+
+    .imagemBanner{
+        width:50%;
+        height: 25px;
+        margin-top:20px;
+    }
+
+.botoes{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botoes button{
+    padding:15px 80px;
+    font-size:2rem;
+}
+
+.pesquisa{
+        flex-direction:row;
+        gap:15px;
+        margin-top: 35px;
+    }
+
+    .pesquisa input{
+        width:100%;
+    }
+
+
+    .pesquisa button{
+        width:100%;
+        height:45px;
+    }}
+
+.barraPesquisa{
+    width: 2000px;
+}
+
+
+    /* Cards */
+
+    .card{
+        height: fit-content;
+        flex-direction:column;
+        margin-bottom: 50px;
+    }
+
+    .card:nth-child(even){
+        flex-direction:column-reverse;
+    }
+
+    .foto{
+        width:100%;
+        height: 483px;
+    }
+
+    .texto{
+        width:100%;
+    }
+
+    .texto a{
+    display:inline-flex;
+    margin-top:20px;
+    background-color: #47212e;
+    color:#ffff;
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:10px;
+    border: 1.5px solid #798a65;
+    font-size:15px;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 1px;
+}
+
+@media(min-width:768px)and (max-width:991.98px){
+
+.banner h1{
+    font-family: "SN Pro";
+    font-size: 4rem;
+}
+
+.logo img{
+    width: 50px;
+}
+
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+
+nav a{
+    color:#3D4533;
+    text-decoration:none;
+    font-size:16px;
+}
+
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.profissional {
+  color: #D15385;
+}
+
+
+.usuario i{
+    color: #8E415B;
+    font-size:38px;
+}
+
+.textoBanner{
+        width: 50%;
+    }
+
+
+    .textoBanner h1{
+        font-size:35px;
+    }
+
+
+    .textoBanner p{
+        font-size:16px;
+    }
+
+
+    .imagemBanner{
+        width:50%;
+        height: 25px;
+        margin-top:20px;
+    }
+
+.botoes{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botoes button{
+    padding:15px 80px;
+    font-size:2rem;
+}
+
+.pesquisa{
+        flex-direction:row;
+        gap:15px;
+        margin-top: 35px;
+    }
+
+    .pesquisa input{
+        width:100%;
+    }
+
+
+    .pesquisa button{
+        width:100%;
+        height:45px;
+    }}
+
+.barraPesquisa{
+    width: 2000px;
+}
+
+
+    /* Cards */
+
+    .card{
+        height: fit-content;
+        flex-direction:column;
+        margin-bottom: 50px;
+    }
+
+    .card:nth-child(even){
+        flex-direction:column-reverse;
+    }
+
+    .foto{
+        width:100%;
+        height: 483px;
+    }
+
+    .texto{
+        width:100%;
+    }
+
+    .texto a{
+    display:inline-flex;
+    margin-top:20px;
+    padding:10px 25px;
+    margin-bottom: 1px;
 }
 
 /* ===========================
