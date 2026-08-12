@@ -594,7 +594,7 @@ aside p {
 
 /* -------- */
 
-@media (min-width: 1290px) {
+@media (min-width: 1281px) {
   .secao1 {
     justify-content: center;
     gap: 2.563rem;
@@ -648,19 +648,24 @@ aside p {
     display: block;
     justify-items: center;
   }
+  
 
   .secao1 p {
+     width: 75vw;
     padding-bottom: 3.5rem;
+  }
+
+  .secao1 .imagem1 {
+    display: block;
+    justify-content: center;
   }
 
   #chamada {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
-  #secundaria h1 {
-    text-align: center;
-  }
+  
 
   #textoSecao2 {
     width: 75vw;
@@ -736,7 +741,7 @@ aside p {
   }
 
   .newsletterBox {
-    display: block;
+    display: flex;
     margin-left: 6.75rem;
     margin-right: 5.5rem;
     justify-items: center;
