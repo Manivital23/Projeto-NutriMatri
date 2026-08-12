@@ -417,6 +417,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .accordion img {
@@ -434,6 +435,7 @@ body {
   display: none;
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
+
 }
 
 .pannel p {
@@ -452,6 +454,7 @@ body {
 
 .faq.active {
   border-radius: 1.25rem;
+  
 }
 
 .faq.active img {
@@ -937,6 +940,63 @@ aside p {
   .kiwi img {
     width: 400px;
   }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  #chamada{
+   font-size: 3.5rem;
+   justify-self: center;
+  width: 100%;
+  }
+
+  .imagem1{
+    width: 50%;
+  }
+
+  #textoSecao2 {
+  width: 80%;
+  
+  font-size: 1.5rem;
+ 
+  padding-bottom: 5rem;
+}
+
+#comoFunciona {
+ width: fit-content;
+gap: .5rem;
+padding-left: 4.75rem;
+}
+
+
+
+.passoAPasso {
+ margin-right: 1rem;
+ gap: 1.25rem 0rem;
+}
+
+
+.wrapper {
+ 
+  margin-right: 6.75rem;
+ 
+}
+
+
+.wrapper p {
+  width: 825px;
+}
+
+#quinto h1 {
+  font-size: 3.25rem;
+  margin: 0 auto;
+  padding-bottom: 0.938rem;
+}
+
+.newsletterBox{
+  gap: 55px;
+}
+
 }
 
 /*border: 2px solid red;*/
