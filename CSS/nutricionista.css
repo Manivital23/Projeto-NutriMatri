@@ -58,7 +58,7 @@
   font-family: 'SN Pro', sans-serif;
 }
 
-.content button {
+.content .botaoUm {
   width: 420px;
   height: 68px;
   background-color: var(--pink);
@@ -89,14 +89,14 @@
   height: 400px;
 }
 
-.botão {
+.botaoUm {
   padding-top: 77px;
   padding-left: 65px;
   font-family: "SN Pro";
   font-size: 15px;
 }
 
-.botão a {
+.botaoUm a {
   color: var(--white);
   background-color: #d15385
 }

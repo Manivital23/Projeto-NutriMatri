@@ -40,16 +40,29 @@ body {
 }
 
 .botaoUm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 180px;
   height: 45px;
   border: none;
-  font-family: "SN Pro";
+  padding: 0;
+  margin: 0;
+  font-family: "SN Pro", sans-serif;
   font-size: 15px;
+  font-weight: 700;
   border-radius: 10px;
-  background: #d15385;
+  background-color: #d15385;
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.botaoUm:hover {
+  background-color: #414e32;
+  color: #fff;
 }
 
 .botaoUm:hover {
