@@ -5,5 +5,5 @@ botaoLogin.addEventListener("click", (e) => {
 
     localStorage.setItem("login", "true");
 
-    window.location.href = "../index.html";
+    window.location.href = "/index.html";
 });
