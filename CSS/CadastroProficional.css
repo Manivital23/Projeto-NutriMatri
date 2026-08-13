@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f4eb;
+    color: #4a5d4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container{
+    background-color: #738a70;
+    display: flex;
+    margin: 50px;
+    width: 100%;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+
+}
+
+.btn-info i span{
+ display: block;
+ border-radius: 20px;
+ border: 2px  #d15b7c;
+
+}
+
+
+
+.form-grid  {
+    display: flex;
+    gap: 100px;    
+}
+.column{
+   width: 50%;
+} 
+ 
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.grupo label{
+    color: #f7f4eb;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.grupo input, 
+.grupo select, 
+.grupo textarea{
+    background-color: #C0C4BB;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid #FAF3DF;
+    padding: 20px 50px ;
+    font-size: 15px;
+    color: #000;
+    outline: none;
+    width: 100%;    
+}
+
+.grupo option {
+    color: #d15b7c;
+}
+
+.upload2 {
+    background-color: #C0C4BB;
+    color: #000;
+    border-radius: 20px;
+    border: 2px solid #FAF3DF;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.upload2 label{
+    color: #000;
+
+}
+
+.btn-upload  {
+    background-color: #ffffff;
+    color:#4a5d4e;
+    padding: 3px 30px;
+    border-radius: 120px;
+    font-size: 60px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.upload-foto img{
+    width: 140px;
+    height: 140px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    border: 4px solid #d15b7c;
+    
+}
+
+.grupo input[type="file"] {
+    display: none;
+}
+
+
+.btn-eviar {
+    background-color: #ffffff;
+    color: #d15b7c;
+    border: 2px solid #d15b7c ;
+    padding: 12px 60px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6pxrgba(0,0,0,0.1);
+}
+
+.lgpd-checkbox {
+    margin: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    max-width: 100%;
+    text-align: center;
+}
+.subi{
+    align-items: center;
+}
+
+.img2{
+    border-bottom: #d15b7c;
+}
+
+.checkbox a {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: underline;
+
+}
+
+.links {
+    margin-top: 5px;
+    font-size: 14px;
+    align-items: flex;
+}
+
+.links a {
+    color: #d15b7c;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+.info-icon-btn {
+  width: 42px;
+  height: 42px;
+  background-color: #d81b60; 
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.info-icon-btn:hover {
+  transform: scale(1.08);
+  background-color: #c2185b;
+}
+
+
+.Modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-column{
+  position: relative;
+  background-color: #3b4a34; 
+  color: #ffffff;
+  width: 90%;
+  max-width: 580px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+.close-btn{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+.modal-title{
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.modal-boda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.lista{
+  list-style-type: disc;
+  padding-left: 18px;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.modal-footer-text {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.Modal{
+    display: none;
+}
+
+.ativo{
+    display: flex;
+}
+

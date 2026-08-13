@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/CadastroProficional.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Profissional</title>
+  </head>
+  <body>
+  <main class="main-container">
+      <form class="cadastro-form">
+        <button
+          class="info-icon-btn"
+          id="btn-Info"
+          aria-label="Abrir Requisitos Gerais"
+        >
+          <span class="icon-i">i</span>
+        </button>
+        <div class="Modal" id="moda-lInfo">
+          <div class="modal-column">
+
+            <span class="close-btn" id="fechar"> X </span>
+          
+
+            <h2 class="modal-title">Requisitos Gerais</h2>
+
+            <div class="modal-boda">
+              <ul class="lista">
+                <li>Assistência nutricional ou psicológica</li>
+                <li>Bem-estar materno</li>
+                <li>Pontualidade</li>
+                <li>Empatia e acolhimento</li>
+                <li>Ética profissional</li>
+              </ul>
+              <ul class="lista">
+                <li>Comunicação clara e respeitosa</li>
+                <li>Confidencialidade</li>
+                <li>Respeito à diversidade</li>
+                <li>Comprometimento com a missão da plataforma</li>
+                <li>Experiência em atendimento</li>
+              </ul>
+            </div>
+
+            <p class="modal-footer-text">
+              Venha trabalhar conosco e fazer parte de uma equipe que tem como
+              objetivo a saúde e o bem-estar!
+            </p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="column">
+            <div class="grupo">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" />
+            </div>
+
+            <div class="grupo">
+              <label for="telefone">Telefone/Celular:</label>
+              <input type="tel" id="telefone" />
+            </div>
+
+            <div class="grupo">
+              <label for="especialidade">Especialidade:</label>
+              <select id="especialidade">
+                <option value="" disabled selected></option>
+                <option value="psicologia">Psicologia</option>
+                <option value="nutricao">Nutrição</option>
+              </select>
+            </div>
+
+            <div class="grupo">
+              <label for="curriculo">Currículo:</label>
+
+              <div class="upload2">
+                <label for="curriculo" class="btn-upload">
+                  Faça o upload do arquivo
+                </label>
+
+                <input type="file" id="curriculo" />
+              </div>
+            </div>
+
+            <div class="grupo">
+              <label for="campoFoto">Insira sua foto:</label>
+
+              <div class="upload-foto">
+                <label for="campoFoto">
+                  <img src="../Assets/img/cadastro/fotoDePerfilProfissional.png" alt="upload-foto" />
+                </label>
+
+                <input type="file" id="campoFoto" />
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="grupo">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" />
+            </div>
+
+            <div class="grupo">
+              <label for="registro">CRN/CRP:</label>
+              <input type="text" id="registro" />
+            </div>
+
+            <div class="grupo">
+              <label for="sobre">Sobre mim:</label>
+              <textarea id="sobre" rows="6"></textarea>
+            </div>
+
+            <div class="grupo">
+              <label for="abordagem">Abordagem:</label>
+              <input type="text" id="abordagem" />
+            </div>
+          </div>
+        </div>
+
+        <div class="subi">
+          <button type="submit" class="btn-eviar">Enviar</button>
+        </div>
+
+        <div class="lgpd-checkbox">
+          <input type="checkbox" id="lgpd" />
+
+          <label for="lgpd">
+            Li e concordo com os
+            <a href="../pages/politicaPrivacidade.html">Termos de Uso</a>, a
+            <a href="../pages/politicaPrivacidade.html">Política de Privacidade</a>e autorizo o tratamento dos
+            meus dados pessoais conforme a LGPD.
+          </label>
+        </div>
+      </form>
+    </main>
+    <footer class="links">
+      <p>
+        Já possui um cadastro?
+        <a href="../pages/login.html">Faça o login</a>
+      </p>
+    </footer>
+  
+    <script src="../JS/cadastroProfissional.js"></script>
+   
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>
+</html>
