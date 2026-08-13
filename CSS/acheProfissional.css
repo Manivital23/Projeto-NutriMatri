@@ -1,70 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* ===========================
    CONFIGURAÇÕES GERAIS
 =========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Arial', sans-serif;
-    background-color:#FAF3DF;
-}
-
-
-/* ===========================
-   CABEÇALHO
-=========================== */
-
-
-header{
-    width:100%;
-    height:80px;
-    background-color:none;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 60px;
-}
-
-.banner h1{
-    font-family: "SN Pro";
-    font-size: 4rem;
-}
-
-.logo img{
-    width:70px;
-}
-
-
-nav{
-    display:flex;
-    gap:35px;
-}
-
-
-nav a{
-    color:#3D4533;
-    text-decoration:none;
-    font-size:16px;
-}
-
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-.profissional {
-  color: #D15385;
-}
-
-
-.usuario i{
-    color: #8E415B;
-    font-size:38px;
+    background-color: #FAF3DF;
 }
 
 
@@ -72,11 +21,11 @@ nav a:hover{
    PARTE PRINCIPAL
 =========================== */
 
-
-main{
-    width:90%;
-    margin:auto;
+main {
+    width: 90%;
+    margin: auto;
 }
+
 .scroll {
     justify-self: center;
     display: block;
@@ -84,55 +33,55 @@ main{
     margin-bottom: 65px;
 }
 
+
 /* ===========================
    BANNER
 =========================== */
 
-
-.banner{
-    margin-top:30px;
-    background-image:url("../Assets/img/acheUmProfissional/imagem1.png");
-    background-size:cover;
-    background-position:center;
-    border-radius:25px;
-    padding:35px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+.banner {
+    margin-top: 30px;
+    background-image: url("../Assets/img/acheUmProfissional/imagem1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-.textoBanner{
-    width:50%;
+.banner h1 {
+    font-family: "SN Pro";
+    font-size: 4rem;
 }
 
+.textoBanner {
+    width: 50%;
+}
 
-.textoBanner h1{
+.textoBanner h1 {
     color: #414e32;
-    font-size:64px;
-    margin-bottom:15px;
+    font-size: 64px;
+    margin-bottom: 15px;
 }
 
-
-.textoBanner p{
+.textoBanner p {
     color: #D15385;
-    font-size:24px;
-    line-height:1.5;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
-
-.imagemBanner{
-  width:45%;
-    height:250px;
-    overflow:hidden;
-    border-radius:20px;
+.imagemBanner {
+    width: 45%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-
-.imagemBanner img{
-   width:100%;
-    height:100%;
-    object-fit:cover;
+.imagemBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -141,38 +90,37 @@ main{
    BOTÕES DE CATEGORIA
 =========================== */
 
-
-.botoes{
-    margin-top:30px;
+.botoes {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-
-.botoes button{
-    color:white;
-    border:none;
-    padding:14px 145px;
-    border-radius:40px;
-    font-size:2rem;
+.botoes button {
+    color: white;
+    border: none;
+    padding: 14px 145px;
+    border-radius: 40px;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "SN Pro";
-    cursor:pointer;
-}
-.botoes button:first-child{
-border: 2px solid #3D4533;
-background-color: #AE456F;
-box-shadow: #3D4533 3px 3px;
+    cursor: pointer;
 }
 
-.botoes button:last-child{
-border: 2px solid #AE456F;
-background-color: #3D4533;
-box-shadow: #AE456F 3px 3px;
+.botoes button:first-child {
+    border: 2px solid #3D4533;
+    background-color: #AE456F;
+    box-shadow: #3D4533 3px 3px;
 }
 
-.botoes button:hover{
-    background-color:#6d2c4b;
+.botoes button:last-child {
+    border: 2px solid #AE456F;
+    background-color: #3D4533;
+    box-shadow: #AE456F 3px 3px;
+}
+
+.botoes button:hover {
+    background-color: #6d2c4b;
 }
 
 
@@ -180,54 +128,52 @@ box-shadow: #AE456F 3px 3px;
    ÁREA DE PESQUISA
 =========================== */
 
-.pesquisa{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     margin-top: 70px;
 }
 
 
 /* Barra onde fica a lupa + pesquisar */
 
-.barraPesquisa{
-    width:350px;
-    height:45px;
-    background-color:#dedede;
-    border-radius:15px;
-    display:flex;
-    align-items:center;
-    padding:0 15px;
+.barraPesquisa {
+    width: 350px;
+    height: 45px;
+    background-color: #dedede;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
 
-
-.barraPesquisa i{
-    color:#555;
-    font-size:18px;
-    margin-right:10px;
+.barraPesquisa i {
+    color: #555;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
-
-.barraPesquisa input{
-    width:100%;
-    border:none;
-    outline:none;
-    background:transparent;
-    font-size:16px;
+.barraPesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
 }
 
 
 /* Botão Filtros */
 
-.pesquisa button{
-    width:120px;
-    height:40px;
-    background-color:#d15487;
-    color:white;
-    border:2px solid #4c5438;
-    border-radius:15px;
-    font-size:14px;
-    cursor:pointer;
+.pesquisa button {
+    width: 120px;
+    height: 40px;
+    background-color: #d15487;
+    color: white;
+    border: 2px solid #4c5438;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 
@@ -235,15 +181,14 @@ box-shadow: #AE456F 3px 3px;
    CARDS DOS PROFISSIONAIS
 =========================== */
 
-
-.card{
-    background-color:#8E415B;
-    margin-top:35px;
-    border-radius:40px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    color:white;
+.card {
+    background-color: #8E415B;
+    margin-top: 35px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
     height: 326px;
 }
 
@@ -251,68 +196,67 @@ box-shadow: #AE456F 3px 3px;
 /* ===========================
    IMAGENS DOS CARDS
 =========================== */
-.segundaAba .card{
-    background-color:#38402f;
+
+.segundaAba .card {
+    background-color: #38402f;
 }
 
-.segundaAba .texto a{
+.segundaAba .texto a {
     background-color: #798A65;
     border-color: #D15385;
 }
 
-.foto{
-    display:flex;
+.foto {
+    display: flex;
     height: 326px;
 }
 
-.foto img{
+.foto img {
     border-radius: 40px;
 }
+
 
 /* ===========================
    TEXTO DOS CARDS
 =========================== */
 
-.texto{
-    width:55%;
+.texto {
+    width: 55%;
     padding: 25px;
 }
 
-
-.texto h2{
-    font-size:28px;
-    margin-bottom:5px;
+.texto h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 
-
-.texto h4{
+.texto h4 {
     font-family: "SN Pro";
-    font-size:1.5rem;
-    font-weight:400;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: #fff;
 }
- .subtitulo {
-    font-weight:100;
+
+.subtitulo {
+    font-weight: 100;
 }
 
-.estrelas{
+.estrelas {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     gap: 20px;
 }
 
-
-.texto h3{
-    font-size:18px;
-    margin-top:15px;
-    margin-bottom:8px;
+.texto h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
-
-.texto p{
-    font-size:15px;
-    line-height:1.5;
+.texto p {
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 
@@ -320,470 +264,236 @@ box-shadow: #AE456F 3px 3px;
    BOTÃO WHATSAPP
 =========================== */
 
-
-.texto a{
-    display:inline-flex;
-    margin-top:20px;
+.texto a {
+    display: inline-flex;
+    margin-top: 20px;
     background-color: #47212e;
-    color:#ffff;
-    text-decoration:none;
-    padding:10px 25px;
-    border-radius:10px;
+    color: #ffff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
     border: 1.5px solid #798a65;
-    font-size:15px;
+    font-size: 15px;
     align-items: center;
     gap: 30px;
 }
 
-.texto a i{
-    margin-right:8px;
+.texto a i {
+    margin-right: 8px;
     font-size: 25px;
 }
 
-
-.texto a:hover{
-background-color:#AE456F;
+.texto a:hover {
+    background-color: #AE456F;
 }
 
-
-/* ===========================
-   ESPAÇAMENTO ENTRE CARDS
-=========================== */
-
-
-
-
-/* ===========================
-   AJUSTES PARA IMAGENS
-=========================== */
 
 /* ===========================
    RESPONSIVIDADE
-   (para celular)
+   CELULAR
 =========================== */
 
+@media (max-width: 575.98px) {
 
-@media(max-width:575.98px){
-    header{
-        padding:0 20px;
+    main {
+        width: 95%;
     }
 
-    nav{
-        display:none;
+    .banner {
+        margin-top: 30px;
+        background-position: -555px;
+        border-radius: 25px;
+        padding: 10px;
+        width: 100%;
+        height: 10%;
     }
 
-    .usuario i{
-        font-size:30px;
+    .textoBanner {
+        width: 100%;
     }
 
-    main{
-        width:95%;
-    }
-header{
-    width:100%;
-    height:80px;
-    background-color:none;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 60px;
-}
-
-.banner h1{
-    font-family: "SN Pro";
-    font-size: 4rem;
-}
-
-.logo img{
-    width: 50px;
-}
-
-
-nav{
-    display:flex;
-    gap:35px;
-}
-
-
-nav a{
-    color:#3D4533;
-    text-decoration:none;
-    font-size:16px;
-}
-
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-.profissional {
-  color: #D15385;
-}
-
-
-.usuario i{
-    color: #8E415B;
-    font-size:38px;
-}
-
-.banner{
-    background-position:-555px;
-    border-radius:25px;
-    padding:10px;
-    width: 100%;
-    height: 10%;
-}
-
-.textoBanner{
-        width:100%;
+    .textoBanner h1 {
+        font-size: 35px;
     }
 
-
-    .textoBanner h1{
-        font-size:35px;
+    .textoBanner p {
+        font-size: 16px;
     }
 
-
-    .textoBanner p{
-        font-size:16px;
-    }
-
-
-    .imagemBanner{
-        width:50%;
+    .imagemBanner {
+        width: 50%;
         height: 25px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
-.botoes{
-    margin-top:30px;
-    display: flex;
-    justify-content: space-between;
-}
+    .botoes {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .botoes button {
+        padding: 10px 50px;
+        font-size: 1rem;
+    }
 
-.botoes button{
-    padding:10px 50px;
-    font-size:1rem;
-}
-
-.pesquisa{
-        flex-direction:row;
-        gap:15px;
+    .pesquisa {
+        flex-direction: row;
+        gap: 15px;
         margin-top: 35px;
     }
 
-    .pesquisa input{
-        width:100%;
+    .pesquisa input {
+        width: 100%;
     }
 
+    .pesquisa button {
+        width: 100%;
+        height: 45px;
+    }
 
-    .pesquisa button{
-        width:100%;
-        height:45px;
-    }}
-
-.barraPesquisa{
-    width: 800px;
-}
+    .barraPesquisa {
+        width: 800px;
+    }
 
 
     /* Cards */
 
-    .card{
+    .card {
         height: fit-content;
-        flex-direction:column;
+        flex-direction: column;
         margin-bottom: 50px;
     }
 
-    .card:nth-child(even){
-        flex-direction:column-reverse;
+    .card:nth-child(even) {
+        flex-direction: column-reverse;
     }
 
-    .foto{
-        width:100%;
+    .foto {
+        width: 100%;
         height: 275.5px;
     }
 
-    .texto{
-        width:100%;
+    .texto {
+        width: 100%;
     }
 
-    .texto a{
-    display:inline-flex;
-    margin-top:20px;
-    background-color: #47212e;
-    color:#ffff;
-    text-decoration:none;
-    padding:10px 25px;
-    border-radius:10px;
-    border: 1.5px solid #798a65;
-    font-size:15px;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 1px;
+    .texto a {
+        display: inline-flex;
+        margin-top: 20px;
+        background-color: #47212e;
+        color: #ffff;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        border: 1.5px solid #798a65;
+        font-size: 15px;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 1px;
+    }
 }
+
 
 /* ===========================
-   PEQUENOS AJUSTES
+   TABLET
 =========================== */
 
-@media(min-width:768px)and (max-width:991.98px){
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-.banner h1{
-    font-family: "SN Pro";
-    font-size: 4rem;
-}
+    .banner {
+        border-radius: 25px;
+        padding: 10px;
+        width: 100%;
+        height: 300px;
+    }
 
-.logo img{
-    width: 50px;
-}
-
-
-nav{
-    display:flex;
-    gap:35px;
-}
-
-
-nav a{
-    color:#3D4533;
-    text-decoration:none;
-    font-size:16px;
-}
-
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-.profissional {
-  color: #D15385;
-}
-
-
-.usuario i{
-    color: #8E415B;
-    font-size:38px;
-}
-
-.banner{
-    border-radius:25px;
-    padding:10px;
-    width: 100%;
-    height: 300px;
-}
-
-.textoBanner{
+    .textoBanner {
         width: 50%;
     }
 
-
-    .textoBanner h1{
-        font-size:35px;
+    .textoBanner h1 {
+        font-size: 35px;
     }
 
-
-    .textoBanner p{
-        font-size:16px;
+    .textoBanner p {
+        font-size: 16px;
     }
 
-
-    .imagemBanner{
-        width:50%;
+    .imagemBanner {
+        width: 50%;
         height: 25px;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
-.botoes{
-    margin-top:30px;
-    display: flex;
-    justify-content: space-between;
-}
+    .botoes {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .botoes button {
+        padding: 15px 80px;
+        font-size: 2rem;
+    }
 
-.botoes button{
-    padding:15px 80px;
-    font-size:2rem;
-}
-
-.pesquisa{
-        flex-direction:row;
-        gap:15px;
+    .pesquisa {
+        flex-direction: row;
+        gap: 15px;
         margin-top: 35px;
     }
 
-    .pesquisa input{
-        width:100%;
+    .pesquisa input {
+        width: 100%;
     }
 
+    .pesquisa button {
+        width: 100%;
+        height: 45px;
+    }
 
-    .pesquisa button{
-        width:100%;
-        height:45px;
-    }}
-
-.barraPesquisa{
-    width: 2000px;
-}
+    .barraPesquisa {
+        width: 2000px;
+    }
 
 
     /* Cards */
 
-    .card{
+    .card {
         height: fit-content;
-        flex-direction:column;
+        flex-direction: column;
         margin-bottom: 50px;
     }
 
-    .card:nth-child(even){
-        flex-direction:column-reverse;
+    .card:nth-child(even) {
+        flex-direction: column-reverse;
     }
 
-    .foto{
-        width:100%;
+    .foto {
+        width: 100%;
         height: 483px;
     }
 
-    .texto{
-        width:100%;
+    .texto {
+        width: 100%;
     }
 
-    .texto a{
-    display:inline-flex;
-    margin-top:20px;
-    background-color: #47212e;
-    color:#ffff;
-    text-decoration:none;
-    padding:10px 25px;
-    border-radius:10px;
-    border: 1.5px solid #798a65;
-    font-size:15px;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 1px;
-}
-
-@media(min-width:768px)and (max-width:991.98px){
-
-.banner h1{
-    font-family: "SN Pro";
-    font-size: 4rem;
-}
-
-.logo img{
-    width: 50px;
-}
-
-
-nav{
-    display:flex;
-    gap:35px;
-}
-
-
-nav a{
-    color:#3D4533;
-    text-decoration:none;
-    font-size:16px;
-}
-
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-.profissional {
-  color: #D15385;
-}
-
-
-.usuario i{
-    color: #8E415B;
-    font-size:38px;
-}
-
-.textoBanner{
-        width: 50%;
+    .texto a {
+        display: inline-flex;
+        margin-top: 20px;
+        background-color: #47212e;
+        color: #ffff;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 10px;
+        border: 1.5px solid #798a65;
+        font-size: 15px;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 1px;
     }
-
-
-    .textoBanner h1{
-        font-size:35px;
-    }
-
-
-    .textoBanner p{
-        font-size:16px;
-    }
-
-
-    .imagemBanner{
-        width:50%;
-        height: 25px;
-        margin-top:20px;
-    }
-
-.botoes{
-    margin-top:30px;
-    display: flex;
-    justify-content: space-between;
 }
 
-
-.botoes button{
-    padding:15px 80px;
-    font-size:2rem;
-}
-
-.pesquisa{
-        flex-direction:row;
-        gap:15px;
-        margin-top: 35px;
-    }
-
-    .pesquisa input{
-        width:100%;
-    }
-
-
-    .pesquisa button{
-        width:100%;
-        height:45px;
-    }}
-
-.barraPesquisa{
-    width: 2000px;
-}
-
-
-    /* Cards */
-
-    .card{
-        height: fit-content;
-        flex-direction:column;
-        margin-bottom: 50px;
-    }
-
-    .card:nth-child(even){
-        flex-direction:column-reverse;
-    }
-
-    .foto{
-        width:100%;
-        height: 483px;
-    }
-
-    .texto{
-        width:100%;
-    }
-
-    .texto a{
-    display:inline-flex;
-    margin-top:20px;
-    padding:10px 25px;
-    margin-bottom: 1px;
-}
 
 /* ===========================
    FIM DO CSS

@@ -1,479 +1,642 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Profissionais</title>
 
     <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Ícones -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/img/logos/isotipoAs02Principal.svg"
+    />
+    <link id="css-header" rel="stylesheet" href="../componentes/header.css" />
+    <link id="css-footer" rel="stylesheet" href="../componentes/footer.css" />
 
-        <link id="css-header" rel="stylesheet" href="../componentes/header.css">
-    <link id="css-footer" rel="stylesheet" href="../componentes/footer.css">
-
-    <link rel="stylesheet" href="../CSS/acheProfissional.css">
-
-</head>
-
-<body>
-
+    <link rel="stylesheet" href="../CSS/acheProfissional.css" />
+  </head>
+  <body>
     <!-- Cabeçalho -->
     <header id="header"></header>
     <!-- Conteúdo -->
 
     <main>
+      <!-- Banner -->
 
-        <!-- Banner -->
+      <section class="banner">
+        <div class="textoBanner">
+          <h1>Profissionais</h1>
 
-        <section class="banner">
+          <p>
+            Aqui você encontra todos os profissionais certificados e de
+            confiança!
+          </p>
+        </div>
 
-            <div class="textoBanner">
+        <div class="imagemBanner"></div>
+      </section>
 
-                <h1>Profissionais</h1>
+      <!-- Botões -->
 
-                <p>
-                    Aqui você encontra todos os profissionais certificados
-                    e de confiança!
-                </p>
+      <section class="botoes" role="tablist" arial-label="Tabs Template">
+        <button role="tab" aria-controls="tab-A" aria-selected="true">
+          Psicólogo(a)
+        </button>
 
-            </div>
+        <button role="tab" aria-controls="tab-B" aria-selected="false">
+          Nutricionista
+        </button>
+      </section>
 
-            <div class="imagemBanner">
+      <!-- Pesquisa -->
 
-            </div>
+      <section class="pesquisa">
+        <div class="barraPesquisa">
+          <i class="fa-solid fa-magnifying-glass"></i>
 
-        </section>
+          <input type="text" placeholder="Pesquisar" />
+        </div>
 
-        <!-- Botões -->
+        <button>
+          <i class="fa-solid fa-sliders"></i>
 
-        <section class="botoes" role="tablist" arial-label="Tabs Template">
+          Filtros
+        </button>
+      </section>
 
-            <button role="tab" aria-controls="tab-A" aria-selected="true">Psicólogo(a)</button>
-
-            <button role="tab" aria-controls="tab-B" aria-selected="false">Nutricionista</button>
-
-        </section>
-
-        <!-- Pesquisa -->
-
-       <section class="pesquisa">
-
-    <div class="barraPesquisa">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <input type="text" placeholder="Pesquisar">
-
-    </div>
-
-
-    <button>
-
-        <i class="fa-solid fa-sliders"></i>
-
-        Filtros
-
-    </button>
-
-</section>
-
-        <!-- PRIMEIRO CARD -->
-        <article class="primeiraAba" role="tabpanel" id="tab-A">
-
+      <!-- PRIMEIRO CARD -->
+      <article class="primeiraAba" role="tabpanel" id="tab-A">
         <section class="card">
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/psicologo1.png"
+              alt="Amanda"
+            />
+          </div>
 
-            <div class="foto">
-
-                <img src="../Assets/img/acheUmProfissional/psicologo1.png" alt="Amanda">
-
+          <div class="texto">
+            <h2>Amanda Rodrigues</h2>
+            <div class="estrelas">
+              <h4>Psicóloga</h4>
+              <span ass="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="texto">
+            <h3>
+              Abordagens:
+              <span class="subtitulo"
+                >Análise do Comportamento • Behaviorismo</span
+              >
+            </h3>
+            <h3>Sobre mim:</h3>
 
-                <h2>Amanda Rodrigues</h2>
-<div class="estrelas">
+            <p>
+              Com base em psicologia acessível, busco trazer, atender e entender
+              a empatia, a relação do ser com o outro, em seu meio social.
+            </p>
 
-                <h4>Psicóloga</h4>
-<span ass="alinhaEstrela">
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-</span>
-            
-
-                </div>
-
-                <h3>Abordagens:
-                    <span class="subtitulo">Análise do Comportamento • Behaviorismo</span> 
-                </h3>
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                   Com base em psicologia acessível, busco trazer, atender e entender a empatia, a relação do ser com o outro, em seu meio social.
-
-                </p>
-
-                <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </section>
 
         <!-- SEGUNDO CARD -->
 
         <section class="card">
+          <div class="texto">
+            <h2>Alexandre Oliveira</h2>
 
-            <div class="texto">
-
-                <h2>Alexandre Oliveira</h2>
-
-<div class="estrelas">
-                <h4>Psicólogo</h4>
-<span class="alinhaEstrela">
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-
-</span>
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Gestalt • Terapia Cognitivo-Comportamental </span></h3> 
-
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                   Terapeuta comportamental com especialidadee em ABA, auxiliando adultos, adolescentes e casais a superar os conflitos diários e a obter uma vida e relacionamentos mais harmoniosos
-
-                </p>
-
-               <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
+            <div class="estrelas">
+              <h4>Psicólogo</h4>
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="foto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Gestalt • Terapia Cognitivo-Comportamental
+              </span>
+            </h3>
 
-                <img src="../Assets/img/acheUmProfissional/psicologo2.png" alt="Alexandre">
+            <h3>Sobre mim:</h3>
 
-            </div>
+            <p>
+              Terapeuta comportamental com especialidadee em ABA, auxiliando
+              adultos, adolescentes e casais a superar os conflitos diários e a
+              obter uma vida e relacionamentos mais harmoniosos
+            </p>
 
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/psicologo2.png"
+              alt="Alexandre"
+            />
+          </div>
         </section>
 
         <!-- TERCEIRO CARD -->
 
         <section class="card">
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/psicologo3.png"
+              alt="Lúcia"
+            />
+          </div>
 
-            <div class="foto">
-
-                <img src="../Assets/img/acheUmProfissional/psicologo3.png" alt="Lúcia">
-
+          <div class="texto">
+            <h2>Lúcia Ribeiro</h2>
+            <div class="estrelas">
+              <h4>Psicóloga</h4>
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="texto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Psicologia Clínica • Terapia Familiar
+              </span>
+            </h3>
 
-                <h2>Lúcia Ribeiro</h2>
- <div class="estrelas">
+            <h3>Sobre mim:</h3>
 
-                <h4>Psicóloga</h4>
-<span class="alinhaEstrela">
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
+            <p>
+              Com base em psicologia acessível, busco trazer, atender e entender
+              a empatia, a relação do ser com o outro, em seu meio social.
+            </p>
 
-</span>
-            
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Psicologia Clínica • Terapia Familiar </span></h3>
-
-                <h3>Sobre mim:</h3>
-
-                <p>
- Com base em psicologia acessível, busco trazer, atender e entender a empatia, a relação do ser com o outro, em seu meio social.
-                </p>
-
-                <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </section>
 
         <!-- QUARTO CARD -->
 
         <section class="card">
-
-            <div class="texto">
-
-                <h2>Daniel Coimbra</h2>
-<div class="estrelas">
-                <h4>Psicólogo</h4>
-<span class="alinhaEstrela">
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-
-</span>
-
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Terapia Cognitivo-Comportamental • Psicologia Positiva </span></h3>
-
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                    Com base em psicologia acessível, busco trazer, atender e entender a empatia, a relação do ser com o outro, em seu meio social.
-                </p>
-
-              <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
+          <div class="texto">
+            <h2>Daniel Coimbra</h2>
+            <div class="estrelas">
+              <h4>Psicólogo</h4>
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="foto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Terapia Cognitivo-Comportamental • Psicologia Positiva
+              </span>
+            </h3>
 
-                <img src="../Assets/img/acheUmProfissional/psicologo4.png" alt="Daniel">
+            <h3>Sobre mim:</h3>
 
-            </div>
+            <p>
+              Com base em psicologia acessível, busco trazer, atender e entender
+              a empatia, a relação do ser com o outro, em seu meio social.
+            </p>
 
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/psicologo4.png"
+              alt="Daniel"
+            />
+          </div>
         </section>
-    </article>
+      </article>
 
-    <article class="segundaAba" role="tabpanel" id="tab-B" hidden>
-        
-<section class="card">
+      <article class="segundaAba" role="tabpanel" id="tab-B" hidden>
+        <section class="card">
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/nutricionista1.png"
+              alt="Amanda"
+            />
+          </div>
 
-            <div class="foto">
-
-                <img src="../Assets/img/acheUmProfissional/nutricionista1.png" alt="Amanda">
-
+          <div class="texto">
+            <h2>Lorena Da Silva</h2>
+            <div class="estrelas">
+              <h4>Nutricionista</h4>
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="texto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Atendimento acolhedor e personalizado
+              </span>
+            </h3>
 
-                <h2>Lorena Da Silva</h2>
- <div class="estrelas">
-                <h4>Nutricionista</h4>
-<span class="alinhaEstrela">
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
+            <h3>Sobre mim:</h3>
 
-</span>
-            
-                </div>
+            <p>
+              Nutricionista especializada em saúde da mulher, gestação e pós
+              parto. Acredito que uma alimentação equilibrada é fundamental para
+              promover bem-estar, energia e qualidade de vida.
+            </p>
 
-                <h3>Abordagens:<span class="subtitulo"> Atendimento acolhedor e personalizado </span></h3>
-
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                    Nutricionista especializada em saúde da mulher, gestação e pós parto. Acredito que uma alimentação equilibrada é fundamental para promover bem-estar, energia e qualidade de vida.
-
-                </p>
-
-                <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </section>
 
         <!-- SEGUNDO CARD -->
 
         <section class="card">
+          <div class="texto">
+            <h2>Lucas Fernandes</h2>
+            <div class="estrelas">
+              <h4>Nutricionista</h4>
 
-            <div class="texto">
-
-                <h2>Lucas Fernandes</h2>
-<div class="estrelas">
-                <h4>Nutricionista</h4>
-                
-<span class="alinhaEstrela">
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-   <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-
-</span>
-
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Ultilizo uma abordagem humanizada </span></h3>
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                    Nutricionista com experiência em nutrição materno-infantil. Meu objetivo é ajudar gestantes e mães a alcançarem uma relação mais saudável.
-
-                </p>
-
-               <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="foto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Ultilizo uma abordagem humanizada
+              </span>
+            </h3>
 
-                <img src="../Assets/img/acheUmProfissional/nutricionista2.png" alt="Alexandre">
+            <h3>Sobre mim:</h3>
 
-            </div>
+            <p>
+              Nutricionista com experiência em nutrição materno-infantil. Meu
+              objetivo é ajudar gestantes e mães a alcançarem uma relação mais
+              saudável.
+            </p>
 
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/nutricionista2.png"
+              alt="Alexandre"
+            />
+          </div>
         </section>
 
         <!-- TERCEIRO CARD -->
 
         <section class="card">
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/nutricionista3.png"
+              alt="Lúcia"
+            />
+          </div>
 
-            <div class="foto">
+          <div class="texto">
+            <h2>Dona Rosilda</h2>
+            <div class="estrelas">
+              <h4>Nutricionista</h4>
 
-                <img src="../Assets/img/acheUmProfissional/nutricionista3.png" alt="Lúcia">
-
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="texto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Atentimento inividualizado e estratégias nutricionais
+              </span>
+            </h3>
 
-                <h2>Dona Rosilda</h2>
-<div class="estrelas">
-                <h4>Nutricionista</h4>
-                
-<span class="alinhaEstrela">
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-  <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
+            <h3>Sobre mim:</h3>
 
-</span>
+            <p>
+              Sou apaixonada por auxiliar mulheres a cuidarem da sua saúde
+              durante a gestação e o pós parto. Busco oferecer orientações
+              práticas para tornar a alimentação uma aliada do bem-estar.
+            </p>
 
-
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Atentimento inividualizado e estratégias nutricionais </span></h3>
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                    Sou apaixonada por auxiliar mulheres a cuidarem da sua saúde durante a gestação e o pós parto. Busco oferecer orientações práticas para tornar a alimentação uma aliada do bem-estar.
-
-                </p>
-
-                <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </section>
 
         <!-- QUARTO CARD -->
 
         <section class="card">
+          <div class="texto">
+            <h2>Augusto Mendes</h2>
+            <div class="estrelas">
+              <h4>Nutricionista</h4>
 
-            <div class="texto">
-
-                <h2>Augusto Mendes</h2>
-<div class="estrelas">
-                <h4>Nutricionista </h4>
-                
-<span class="alinhaEstrela">
-     <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-     <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-     <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-     <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-     <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png" alt="star"/>
-
-</span>
-
-                </div>
-
-                <h3>Abordagens:<span class="subtitulo"> Análise do comportamento -Behaviorismoh </span></h3>
-
-
-                <h3>Sobre mim:</h3>
-
-                <p>
-
-                    Com base em uma nutrição acessível, busco trazer, atender e entender a empatia, a relação do ser com o outro, em seu meio social, visando entender o conjunto social. 
-                </p>
-
-                <a class="botaoWhatsapp" href="#">
-
-                    
-                    Telefone: (11) 94559-3166 
-<i class="fa-brands fa-whatsapp"></i>
-                </a>
-
+              <span class="alinhaEstrela">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency-systems-filled/FAF3DF/30/star.png"
+                  alt="star"
+                />
+              </span>
             </div>
 
-            <div class="foto">
+            <h3>
+              Abordagens:<span class="subtitulo">
+                Análise do comportamento -Behaviorismoh
+              </span>
+            </h3>
 
-                <img src="../Assets/img/acheUmProfissional/nutricionista4.png" alt="Daniel">
+            <h3>Sobre mim:</h3>
 
-            </div>
+            <p>
+              Com base em uma nutrição acessível, busco trazer, atender e
+              entender a empatia, a relação do ser com o outro, em seu meio
+              social, visando entender o conjunto social.
+            </p>
 
+            <a class="botaoWhatsapp" href="#">
+              Telefone: (11) 94559-3166
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="foto">
+            <img
+              src="../Assets/img/acheUmProfissional/nutricionista4.png"
+              alt="Daniel"
+            />
+          </div>
         </section>
-         </article>
-         <img class="scroll" src="../Assets/img/acheUmProfissional/scroll.png" alt="">
+      </article>
+      <img
+        class="scroll"
+        src="../Assets/img/acheUmProfissional/scroll.png"
+        alt=""
+      />
     </main>
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
@@ -481,14 +644,13 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
-
+    <script src="../JS/menuHamburguer.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-<script src="../JS/trocadeaba.js"></script>
-<footer id="footer"></footer>
-<script src="../js/headerFooter.js"></script>
-</body>
-
+    <script src="../JS/trocadeaba.js"></script>
+    <footer id="footer"></footer>
+    <script src="../js/headerFooter.js"></script>
+  </body>
 </html>

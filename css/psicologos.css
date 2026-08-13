@@ -43,6 +43,8 @@ body {
   width: 180px;
   height: 45px;
   border: none;
+  font-family: "SN Pro";
+  font-size: 15px;
   border-radius: 10px;
   background: #d15385;
   color: #fff;
