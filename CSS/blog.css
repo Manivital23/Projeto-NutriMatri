@@ -34,7 +34,7 @@ body {
 }
 
 .topo span {
-  color: #ca2072;
+  color: #D15385;
 }
 
 .topo p {
@@ -46,7 +46,7 @@ body {
 .topo .saibaMais {
   color: #faf3df;
   box-shadow: #798a65 3px 3px;
-  background-color: #ca2072;
+  background-color: #D15385;
   margin-top: 70px;
   border-radius: 20px;
   font-family: 'SN Pro';
@@ -91,22 +91,22 @@ body {
   width: 350px;
   height: 50px;
   padding-left: 45px;
-  border: 2px solid #798a65;
+  border: 2px solid #657354;
   border-radius: 20px;
-  background-color: #faf3df;
+  background-color: #D9D9D9;
   font-family: 'SN Pro';
   font-size: 18px;
   outline: none;
 }
 
 .filtro input:focus {
-  border-color: #ca2072;
+  border-color: #D15385;
 }
 
 .filtro button {
   width: 150px;
   height: 50px;
-  background-color: #ca2072;
+  background-color: #D15385;
   color: #faf3df;
   border: 2px solid #798a65;
   border-radius: 20px;
@@ -144,7 +144,7 @@ body {
   height: 405px;
   display: flex;
   flex-direction: column;
-  background-color: #798A65;
+  background-color: #D9D9D9;
   border-radius: 20px;
   transition: transform 0.5s ease;
 }
@@ -176,7 +176,7 @@ body {
 }
 
 .blog .lerMais {
-  color: #ca2072;
+  color: #D15385;
   font-size: 16px;
   background-color: transparent;
   border: none;
@@ -199,6 +199,13 @@ body {
 
 .blog .lerMais:hover img {
   transform: translateX(5px);
+}
+
+#scroll {
+    justify-self: center;
+    display: block;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 @media (max-width: 900px) {
@@ -272,4 +279,6 @@ body {
     margin: 20px;
     padding-top: 20px;
   }
+
+  
 }
