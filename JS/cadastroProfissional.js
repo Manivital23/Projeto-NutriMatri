@@ -3,7 +3,7 @@ const modal = document.getElementById("moda-lInfo")
 const close = document.getElementById("fechar")
 const btnEnviar = document.querySelector("btn-eviar1")
 
-btn-eviar1.addEventListener("click",()=>{
+btnEnviar.addEventListener("click",()=>{
   window.location.href = "/index.html"
 })
 
